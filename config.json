@@ -76,7 +76,7 @@
     "customurlscheme": "moodlemobile",
     "siteurl": "http://assessment.mtnstaff.com",
     "sitename": "MTN Assess",
-    "multisitesdisplay": "",
+    "multisitesdisplay": "", 
     "skipssoconfirmation": false,
     "forcedefaultlanguage": false,
     "privacypolicy": "https:\/\/moodle.org\/mod\/page\/view.php?id=8148",
