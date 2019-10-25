@@ -1,6 +1,6 @@
 webpackJsonp([55],{
 
-/***/ 2085:
+/***/ 2083:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -227,8 +227,7 @@ var credentials_CoreLoginCredentialsPage = /** @class */ (function () {
                 _this.credForm.controls['username'].reset();
                 _this.credForm.controls['password'].reset();
                 _this.siteId = id;
-                _this.navCtrl.push('CoreCoursesAvailableCoursesPage', {});
-                return _this.loginHelper.goToSiteInitialPage(undefined, undefined, undefined, undefined, _this.urlToOpen);
+                return _this.loginHelper.goToSiteInitialPage(_this.navCtrl, 'CoreCoursesAvailableCoursesPage');
             });
         }).catch(function (error) {
             _this.loginHelper.treatUserTokenError(siteUrl, error, username, password);

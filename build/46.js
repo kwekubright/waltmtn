@@ -34,7 +34,7 @@ var ion_tabs = __webpack_require__(719);
 var mainmenu = __webpack_require__(487);
 
 // EXTERNAL MODULE: ./src/core/mainmenu/providers/delegate.ts
-var delegate = __webpack_require__(165);
+var delegate = __webpack_require__(166);
 
 // EXTERNAL MODULE: ./src/core/contentlinks/providers/delegate.ts
 var providers_delegate = __webpack_require__(58);

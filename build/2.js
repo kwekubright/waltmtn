@@ -28,7 +28,7 @@ var messages = __webpack_require__(153);
 var split_view = __webpack_require__(25);
 
 // EXTERNAL MODULE: ./src/components/tabs/tabs.ts
-var tabs = __webpack_require__(172);
+var tabs = __webpack_require__(173);
 
 // CONCATENATED MODULE: ./src/addon/messages/pages/index/index.ts
 // (C) Copyright 2015 Martin Dougiamas
@@ -348,7 +348,7 @@ var refresher = __webpack_require__(151);
 var refresher_content_ngfactory = __webpack_require__(210);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.js
-var refresher_content = __webpack_require__(167);
+var refresher_content = __webpack_require__(168);
 
 // EXTERNAL MODULE: ./src/components/loading/loading.ngfactory.js
 var loading_ngfactory = __webpack_require__(50);

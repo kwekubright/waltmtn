@@ -25,7 +25,7 @@ var user = __webpack_require__(43);
 var app = __webpack_require__(9);
 
 // EXTERNAL MODULE: ./src/providers/config.ts
-var config = __webpack_require__(171);
+var config = __webpack_require__(172);
 
 // EXTERNAL MODULE: ./src/providers/events.ts
 var events = __webpack_require__(11);
@@ -523,7 +523,7 @@ var refresher = __webpack_require__(151);
 var refresher_content_ngfactory = __webpack_require__(210);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.js
-var refresher_content = __webpack_require__(167);
+var refresher_content = __webpack_require__(168);
 
 // EXTERNAL MODULE: ./src/components/loading/loading.ngfactory.js
 var loading_ngfactory = __webpack_require__(50);

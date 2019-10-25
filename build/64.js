@@ -208,7 +208,7 @@ var gesture_controller = __webpack_require__(39);
 var refresher_content_ngfactory = __webpack_require__(210);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.js
-var refresher_content = __webpack_require__(167);
+var refresher_content = __webpack_require__(168);
 
 // EXTERNAL MODULE: ./src/components/loading/loading.ngfactory.js
 var loading_ngfactory = __webpack_require__(50);
@@ -361,10 +361,10 @@ var block_providers_helper = __webpack_require__(382);
 var format = __webpack_require__(495);
 
 // EXTERNAL MODULE: ./src/core/course/providers/format-delegate.ts
-var format_delegate = __webpack_require__(175);
+var format_delegate = __webpack_require__(158);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-controller.js
-var modal_controller = __webpack_require__(168);
+var modal_controller = __webpack_require__(169);
 
 // CONCATENATED MODULE: ./src/core/course/components/format/format.ngfactory.js
 /**
@@ -509,7 +509,7 @@ var CoreCourseFormatComponentNgFactory = core["_27" /* ɵccf */]("core-course-fo
 var tab_ngfactory = __webpack_require__(479);
 
 // EXTERNAL MODULE: ./src/components/tabs/tabs.ts
-var tabs = __webpack_require__(172);
+var tabs = __webpack_require__(173);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
 var toolbar_header = __webpack_require__(365);

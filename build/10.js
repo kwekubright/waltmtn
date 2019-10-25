@@ -1,6 +1,6 @@
 webpackJsonp([10],{
 
-/***/ 2080:
+/***/ 2081:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25,7 +25,7 @@ var sites = __webpack_require__(1);
 var dom = __webpack_require__(4);
 
 // EXTERNAL MODULE: ./src/components/tabs/tabs.ts
-var tabs = __webpack_require__(172);
+var tabs = __webpack_require__(173);
 
 // EXTERNAL MODULE: ./src/core/block/providers/delegate.ts
 var delegate = __webpack_require__(56);
@@ -486,7 +486,7 @@ var gesture_controller = __webpack_require__(39);
 var refresher_content_ngfactory = __webpack_require__(210);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.js
-var refresher_content = __webpack_require__(167);
+var refresher_content = __webpack_require__(168);
 
 // EXTERNAL MODULE: ./src/core/sitehome/components/index/index.ngfactory.js + 5 modules
 var index_ngfactory = __webpack_require__(2117);

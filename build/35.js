@@ -320,7 +320,7 @@ var gesture_controller = __webpack_require__(39);
 var refresher_content_ngfactory = __webpack_require__(210);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.js
-var refresher_content = __webpack_require__(167);
+var refresher_content = __webpack_require__(168);
 
 // EXTERNAL MODULE: ./src/core/siteplugins/components/plugin-content/plugin-content.ngfactory.js
 var plugin_content_ngfactory = __webpack_require__(404);

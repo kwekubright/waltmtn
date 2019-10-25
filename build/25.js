@@ -55,7 +55,7 @@ var utils_utils = __webpack_require__(2);
 var app_component = __webpack_require__(488);
 
 // EXTERNAL MODULE: ./src/addon/mod/lesson/providers/lesson.ts
-var lesson = __webpack_require__(164);
+var lesson = __webpack_require__(165);
 
 // EXTERNAL MODULE: ./src/addon/mod/lesson/providers/lesson-offline.ts
 var lesson_offline = __webpack_require__(281);
@@ -940,7 +940,7 @@ var nav_params = __webpack_require__(71);
 var popover_controller = __webpack_require__(65);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-controller.js
-var modal_controller = __webpack_require__(168);
+var modal_controller = __webpack_require__(169);
 
 // CONCATENATED MODULE: ./src/addon/mod/lesson/pages/player/player.ngfactory.js
 /**

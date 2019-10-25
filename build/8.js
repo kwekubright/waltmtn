@@ -52,7 +52,7 @@ var question = __webpack_require__(1501);
 var app_component = __webpack_require__(488);
 
 // EXTERNAL MODULE: ./src/addon/mod/quiz/providers/quiz.ts
-var quiz = __webpack_require__(161);
+var quiz = __webpack_require__(162);
 
 // EXTERNAL MODULE: ./src/addon/mod/quiz/providers/quiz-sync.ts
 var quiz_sync = __webpack_require__(254);
@@ -1132,7 +1132,7 @@ var nav_params = __webpack_require__(71);
 var popover_controller = __webpack_require__(65);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-controller.js
-var modal_controller = __webpack_require__(168);
+var modal_controller = __webpack_require__(169);
 
 // CONCATENATED MODULE: ./src/addon/mod/quiz/pages/player/player.ngfactory.js
 /**

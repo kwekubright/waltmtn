@@ -1,6 +1,6 @@
 webpackJsonp([53],{
 
-/***/ 2038:
+/***/ 2037:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -123,7 +123,7 @@ var init_CoreLoginInitPage = /** @class */ (function () {
         if (this.sitesProvider.isLoggedIn()) {
             if (!this.loginHelper.isSiteLoggedOut()) {
                 // User is logged in, go to site initial page.
-                return this.loginHelper.goToSiteInitialPage();
+                return this.loginHelper.goToSiteInitialPage(this.navCtrl, 'CoreCoursesAvailableCoursesPage');
             }
             else {
                 // The site is marked as logged out. Logout and try again.
