@@ -1,9 +1,9 @@
 {
     "app_id": "com.mtnstaff.assessment",
     "appname": "Staff Assessment",
-    "desktopappname": "MTN Assess",
-    "versioncode": 3710,
-    "versionname": "3.7.1",
+    "desktopappname": "Staff Assessment",
+    "versioncode": 1.0,
+    "versionname": "1.0",
     "cache_update_frequency_usually": 420000,
     "cache_update_frequency_often": 1200000,
     "cache_update_frequency_sometimes": 3600000,
