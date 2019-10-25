@@ -958,7 +958,7 @@ var rich_text_editor = __webpack_require__(247);
 var item_divider = __webpack_require__(93);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/grid/grid.js
-var grid = __webpack_require__(156);
+var grid = __webpack_require__(157);
 
 // EXTERNAL MODULE: ./src/pipes/date-day-or-time.ts
 var date_day_or_time = __webpack_require__(309);

@@ -361,7 +361,7 @@ var block_providers_helper = __webpack_require__(382);
 var format = __webpack_require__(495);
 
 // EXTERNAL MODULE: ./src/core/course/providers/format-delegate.ts
-var format_delegate = __webpack_require__(158);
+var format_delegate = __webpack_require__(156);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-controller.js
 var modal_controller = __webpack_require__(169);

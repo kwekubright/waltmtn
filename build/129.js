@@ -34,7 +34,7 @@ var dom = __webpack_require__(4);
 var split_view = __webpack_require__(25);
 
 // EXTERNAL MODULE: ./src/addon/competency/providers/competency.ts
-var competency = __webpack_require__(157);
+var competency = __webpack_require__(158);
 
 // EXTERNAL MODULE: ./src/addon/competency/providers/helper.ts
 var helper = __webpack_require__(371);

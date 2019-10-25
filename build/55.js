@@ -1,6 +1,6 @@
 webpackJsonp([55],{
 
-/***/ 2084:
+/***/ 2085:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36,6 +36,9 @@ var esm5_forms = __webpack_require__(22);
 // EXTERNAL MODULE: ./src/configconstants.ts
 var configconstants = __webpack_require__(119);
 
+// EXTERNAL MODULE: ./src/core/course/providers/format-delegate.ts
+var format_delegate = __webpack_require__(156);
+
 // CONCATENATED MODULE: ./src/core/login/pages/credentials/credentials.ts
 // (C) Copyright 2015 Martin Dougiamas
 //
@@ -69,11 +72,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Page to enter the user credentials.
  */
 var credentials_CoreLoginCredentialsPage = /** @class */ (function () {
-    function CoreLoginCredentialsPage(navCtrl, navParams, fb, appProvider, sitesProvider, loginHelper, domUtils, translate, eventsProvider) {
+    function CoreLoginCredentialsPage(navCtrl, navParams, fb, appProvider, sitesProvider, loginHelper, domUtils, translate, eventsProvider, courseFormatDelegate) {
         this.navCtrl = navCtrl;
         this.appProvider = appProvider;
         this.sitesProvider = sitesProvider;
@@ -81,6 +85,7 @@ var credentials_CoreLoginCredentialsPage = /** @class */ (function () {
         this.domUtils = domUtils;
         this.translate = translate;
         this.eventsProvider = eventsProvider;
+        this.courseFormatDelegate = courseFormatDelegate;
         this.siteChecked = false;
         this.pageLoaded = false;
         this.isBrowserSSO = false;
@@ -228,6 +233,7 @@ var credentials_CoreLoginCredentialsPage = /** @class */ (function () {
                 _this.credForm.controls['password'].reset();
                 _this.siteId = id;
                 return _this.loginHelper.goToSiteInitialPage(_this.navCtrl, 'CoreCoursesAvailableCoursesPage');
+                // R return this.courseFormatDelegate.openCourse(this.navCtrl, {id: 2, displayname: 'MTN EBU SME TEAM ASSESSMENT' , shortname: 'SME SLES TEST', category: 1, cacherev: 1571967638, calendartype: "", categoryid: 1, categoryname: "Miscellaneous", completionnotify: 0, contacts: [], defaultgroupingid: 0, enablecompletion: 1, enddate: 1604102400, enrollmentmethods: ["manual"], format: "topics", fullname: "MTN EBU SME TEAM ASSESSMENT", groupmode: 0, groupmodeforce: 0, idnumber: "SME01", isEnrolled: false,lang: "en", legacyfiles: 0, marker: 0, maxbytes: 0, newsitems: 1, overviewfiles: [], requested: 0, showgrades: 1, showreports: 1, sortorder: 10001, startdate: 1571526000, summary: "", summaryfiles: [], summaryformat: 1, theme: "", timecreated: 1571501527, timemodified: 1571543395, visible: 1});
             });
         }).catch(function (error) {
             _this.loginHelper.treatUserTokenError(siteUrl, error, username, password);
@@ -268,7 +274,7 @@ var credentials_CoreLoginCredentialsPage = /** @class */ (function () {
         __metadata("design:paramtypes", [ionic_angular["s" /* NavController */], ionic_angular["t" /* NavParams */], esm5_forms["d" /* FormBuilder */], app["a" /* CoreAppProvider */],
             sites["a" /* CoreSitesProvider */], helper["a" /* CoreLoginHelperProvider */],
             dom["a" /* CoreDomUtilsProvider */], _ngx_translate_core["c" /* TranslateService */],
-            events["a" /* CoreEventsProvider */]])
+            events["a" /* CoreEventsProvider */], format_delegate["a" /* CoreCourseFormatDelegate */]])
     ], CoreLoginCredentialsPage);
     return CoreLoginCredentialsPage;
 }());
@@ -560,6 +566,7 @@ var nav_params = __webpack_require__(71);
 
 
 
+
 var styles_CoreLoginCredentialsPage = [];
 var RenderType_CoreLoginCredentialsPage = core["_29" /* ɵcrt */]({ encapsulation: 2, styles: styles_CoreLoginCredentialsPage, data: {} });
 
@@ -591,7 +598,7 @@ function View_CoreLoginCredentialsPage_0(_l) { return core["_57" /* ɵvid */](0,
         var pd_0 = (_co.forgottenPassword() !== false);
         ad = (pd_0 && ad);
     } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_30" /* ɵdid */](62, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */]], { color: [0, "color"], block: [1, "block"] }, null), (_l()(), core["_55" /* ɵted */](63, 0, ["", ""])), core["_47" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_55" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_55" /* ɵted */](-1, null, ["\n\n            "])), (_l()(), core["_26" /* ɵand */](16777216, null, null, 1, null, View_CoreLoginCredentialsPage_6)), core["_30" /* ɵdid */](68, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n\n            "])), (_l()(), core["_26" /* ɵand */](16777216, null, null, 1, null, View_CoreLoginCredentialsPage_8)), core["_30" /* ɵdid */](71, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_55" /* ɵted */](-1, 0, ["\n        "])), (_l()(), core["_31" /* ɵeld */](74, 0, null, 0, 7, "div", [], null, null, null, null, null)), (_l()(), core["_55" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_31" /* ɵeld */](76, 0, null, null, 4, "p", [["style", "text-align: center;"]], null, null, null, null, null)), (_l()(), core["_55" /* ɵted */](-1, null, [" \n                Powered by: "])), (_l()(), core["_31" /* ɵeld */](78, 0, null, null, 1, "a", [["href", "http://defforventures.com"]], null, null, null, null, null)), (_l()(), core["_55" /* ɵted */](-1, null, ["Walter Deffor (Telecom Consultant)"])), (_l()(), core["_55" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_55" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_55" /* ɵted */](-1, 0, ["\n    "])), (_l()(), core["_55" /* ɵted */](-1, 1, ["\n"])), (_l()(), core["_55" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; _ck(_v, 5, 0); var currVal_5 = _co.pageLoaded; _ck(_v, 19, 0, currVal_5); var currVal_6 = _co.logoUrl; _ck(_v, 27, 0, currVal_6); var currVal_7 = !_co.logoUrl; _ck(_v, 30, 0, currVal_7); var currVal_8 = _co.siteName; _ck(_v, 36, 0, currVal_8); var currVal_16 = _co.credForm; _ck(_v, 42, 0, currVal_16); var currVal_17 = (_co.siteChecked && !_co.isBrowserSSO); _ck(_v, 47, 0, currVal_17); var currVal_18 = (_co.siteChecked && !_co.isBrowserSSO); _ck(_v, 50, 0, currVal_18); var currVal_20 = ""; _ck(_v, 53, 0, currVal_20); var currVal_22 = "light"; var currVal_23 = ""; _ck(_v, 62, 0, currVal_22, currVal_23); var currVal_25 = (_co.identityProviders && _co.identityProviders.length); _ck(_v, 68, 0, currVal_25); var currVal_26 = _co.canSignup; _ck(_v, 71, 0, currVal_26); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = core["_44" /* ɵnov */](_v, 4)._hidden; var currVal_1 = core["_44" /* ɵnov */](_v, 4)._sbPadding; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_2 = core["_56" /* ɵunv */](_v, 9, 0, core["_44" /* ɵnov */](_v, 10).transform("core.login.login")); _ck(_v, 9, 0, currVal_2); var currVal_3 = core["_44" /* ɵnov */](_v, 16).statusbarPadding; var currVal_4 = core["_44" /* ɵnov */](_v, 16)._hasRefresher; _ck(_v, 15, 0, currVal_3, currVal_4); var currVal_9 = core["_44" /* ɵnov */](_v, 44).ngClassUntouched; var currVal_10 = core["_44" /* ɵnov */](_v, 44).ngClassTouched; var currVal_11 = core["_44" /* ɵnov */](_v, 44).ngClassPristine; var currVal_12 = core["_44" /* ɵnov */](_v, 44).ngClassDirty; var currVal_13 = core["_44" /* ɵnov */](_v, 44).ngClassValid; var currVal_14 = core["_44" /* ɵnov */](_v, 44).ngClassInvalid; var currVal_15 = core["_44" /* ɵnov */](_v, 44).ngClassPending; _ck(_v, 40, 0, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15); var currVal_19 = ((_co.siteChecked && !_co.isBrowserSSO) && !_co.credForm.valid); _ck(_v, 52, 0, currVal_19); var currVal_21 = core["_56" /* ɵunv */](_v, 54, 0, core["_44" /* ɵnov */](_v, 55).transform("core.login.loginbutton")); _ck(_v, 54, 0, currVal_21); var currVal_24 = core["_56" /* ɵunv */](_v, 63, 0, core["_44" /* ɵnov */](_v, 64).transform("core.login.forgotten")); _ck(_v, 63, 0, currVal_24); }); }
-function View_CoreLoginCredentialsPage_Host_0(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 1, "page-core-login-credentials", [], null, null, null, View_CoreLoginCredentialsPage_0, RenderType_CoreLoginCredentialsPage)), core["_30" /* ɵdid */](1, 49152, null, 0, credentials_CoreLoginCredentialsPage, [nav_controller["a" /* NavController */], nav_params["a" /* NavParams */], esm5_forms["d" /* FormBuilder */], app["a" /* CoreAppProvider */], sites["a" /* CoreSitesProvider */], helper["a" /* CoreLoginHelperProvider */], dom["a" /* CoreDomUtilsProvider */], translate_service["a" /* TranslateService */], events["a" /* CoreEventsProvider */]], null, null)], null, null); }
+function View_CoreLoginCredentialsPage_Host_0(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 1, "page-core-login-credentials", [], null, null, null, View_CoreLoginCredentialsPage_0, RenderType_CoreLoginCredentialsPage)), core["_30" /* ɵdid */](1, 49152, null, 0, credentials_CoreLoginCredentialsPage, [nav_controller["a" /* NavController */], nav_params["a" /* NavParams */], esm5_forms["d" /* FormBuilder */], app["a" /* CoreAppProvider */], sites["a" /* CoreSitesProvider */], helper["a" /* CoreLoginHelperProvider */], dom["a" /* CoreDomUtilsProvider */], translate_service["a" /* TranslateService */], events["a" /* CoreEventsProvider */], format_delegate["a" /* CoreCourseFormatDelegate */]], null, null)], null, null); }
 var CoreLoginCredentialsPageNgFactory = core["_27" /* ɵccf */]("page-core-login-credentials", credentials_CoreLoginCredentialsPage, View_CoreLoginCredentialsPage_Host_0, {}, {}, []);
 
 //# sourceMappingURL=credentials.ngfactory.js.map

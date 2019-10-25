@@ -1,6 +1,6 @@
 webpackJsonp([53],{
 
-/***/ 2037:
+/***/ 2044:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29,6 +29,9 @@ var constants = __webpack_require__(40);
 
 // EXTERNAL MODULE: ./src/core/login/providers/helper.ts
 var helper = __webpack_require__(122);
+
+// EXTERNAL MODULE: ./src/core/course/providers/format-delegate.ts
+var format_delegate = __webpack_require__(156);
 
 // CONCATENATED MODULE: ./src/core/login/pages/init/init.ts
 // (C) Copyright 2015 Martin Dougiamas
@@ -61,17 +64,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Page that displays a "splash screen" while the app is being initialized.
  */
 var init_CoreLoginInitPage = /** @class */ (function () {
-    function CoreLoginInitPage(navCtrl, appProvider, initDelegate, sitesProvider, loginHelper, splashScreen) {
+    function CoreLoginInitPage(navCtrl, appProvider, initDelegate, sitesProvider, loginHelper, splashScreen, courseFormatDelegate) {
         this.navCtrl = navCtrl;
         this.appProvider = appProvider;
         this.initDelegate = initDelegate;
         this.sitesProvider = sitesProvider;
         this.loginHelper = loginHelper;
         this.splashScreen = splashScreen;
+        this.courseFormatDelegate = courseFormatDelegate;
     }
     /**
      * View loaded.
@@ -123,7 +128,11 @@ var init_CoreLoginInitPage = /** @class */ (function () {
         if (this.sitesProvider.isLoggedIn()) {
             if (!this.loginHelper.isSiteLoggedOut()) {
                 // User is logged in, go to site initial page.
+                // T this.navCtrl.setRoot('CoreCoursesAvailableCoursesPage');
+                // T return this.loginHelper.goToSiteInitialPage();
                 return this.loginHelper.goToSiteInitialPage(this.navCtrl, 'CoreCoursesAvailableCoursesPage');
+                // T return this.navCtrl.push('CoreCoursesAvailableCoursesPage');
+                // T this.courseFormatDelegate.openCourse(this.navCtrl, {id: 2, url: ''});
             }
             else {
                 // The site is marked as logged out. Logout and try again.
@@ -141,7 +150,7 @@ var init_CoreLoginInitPage = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [ionic_angular["s" /* NavController */], app["a" /* CoreAppProvider */], init["a" /* CoreInitDelegate */],
             sites["a" /* CoreSitesProvider */], helper["a" /* CoreLoginHelperProvider */],
-            splash_screen["a" /* SplashScreen */]])
+            splash_screen["a" /* SplashScreen */], format_delegate["a" /* CoreCourseFormatDelegate */]])
     ], CoreLoginInitPage);
     return CoreLoginInitPage;
 }());
@@ -272,11 +281,12 @@ var spinner = __webpack_require__(112);
 
 
 
+
 var styles_CoreLoginInitPage = [];
 var RenderType_CoreLoginInitPage = core["_29" /* ɵcrt */]({ encapsulation: 2, styles: styles_CoreLoginInitPage, data: {} });
 
 function View_CoreLoginInitPage_0(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 8, "ion-content", [], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_30" /* ɵdid */](1, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform["a" /* Platform */], dom_controller["a" /* DomController */], core["t" /* ElementRef */], core["V" /* Renderer */], app_app["a" /* App */], keyboard["a" /* Keyboard */], core["M" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_55" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_31" /* ɵeld */](3, 0, null, 1, 4, "div", [["class", "core-bglogo"]], null, null, null, null, null)), (_l()(), core["_55" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_31" /* ɵeld */](5, 0, null, null, 1, "ion-spinner", [], [[2, "spinner-paused", null]], null, null, spinner_ngfactory["b" /* View_Spinner_0 */], spinner_ngfactory["a" /* RenderType_Spinner */])), core["_30" /* ɵdid */](6, 114688, null, 0, spinner["a" /* Spinner */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */]], null, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_55" /* ɵted */](-1, 1, ["\n"])), (_l()(), core["_55" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { _ck(_v, 6, 0); }, function (_ck, _v) { var currVal_0 = core["_44" /* ɵnov */](_v, 1).statusbarPadding; var currVal_1 = core["_44" /* ɵnov */](_v, 1)._hasRefresher; _ck(_v, 0, 0, currVal_0, currVal_1); var currVal_2 = core["_44" /* ɵnov */](_v, 6)._paused; _ck(_v, 5, 0, currVal_2); }); }
-function View_CoreLoginInitPage_Host_0(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 1, "page-core-login-init", [], null, null, null, View_CoreLoginInitPage_0, RenderType_CoreLoginInitPage)), core["_30" /* ɵdid */](1, 49152, null, 0, init_CoreLoginInitPage, [nav_controller["a" /* NavController */], app["a" /* CoreAppProvider */], init["a" /* CoreInitDelegate */], sites["a" /* CoreSitesProvider */], helper["a" /* CoreLoginHelperProvider */], splash_screen["a" /* SplashScreen */]], null, null)], null, null); }
+function View_CoreLoginInitPage_Host_0(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 1, "page-core-login-init", [], null, null, null, View_CoreLoginInitPage_0, RenderType_CoreLoginInitPage)), core["_30" /* ɵdid */](1, 49152, null, 0, init_CoreLoginInitPage, [nav_controller["a" /* NavController */], app["a" /* CoreAppProvider */], init["a" /* CoreInitDelegate */], sites["a" /* CoreSitesProvider */], helper["a" /* CoreLoginHelperProvider */], splash_screen["a" /* SplashScreen */], format_delegate["a" /* CoreCourseFormatDelegate */]], null, null)], null, null); }
 var CoreLoginInitPageNgFactory = core["_27" /* ɵccf */]("page-core-login-init", init_CoreLoginInitPage, View_CoreLoginInitPage_Host_0, {}, {}, []);
 
 //# sourceMappingURL=init.ngfactory.js.map

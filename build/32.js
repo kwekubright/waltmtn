@@ -380,7 +380,7 @@ var refresher_content_ngfactory = __webpack_require__(210);
 var refresher_content = __webpack_require__(168);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/grid/grid.js
-var grid = __webpack_require__(156);
+var grid = __webpack_require__(157);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/grid/row.js
 var row = __webpack_require__(117);

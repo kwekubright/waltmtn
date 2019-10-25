@@ -43,7 +43,7 @@ var course = __webpack_require__(14);
 var helper = __webpack_require__(36);
 
 // EXTERNAL MODULE: ./src/core/course/providers/format-delegate.ts
-var format_delegate = __webpack_require__(158);
+var format_delegate = __webpack_require__(156);
 
 // CONCATENATED MODULE: ./src/core/courses/pages/course-preview/course-preview.ts
 // (C) Copyright 2015 Martin Dougiamas
