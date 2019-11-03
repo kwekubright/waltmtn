@@ -1,6 +1,6 @@
 webpackJsonp([55],{
 
-/***/ 2084:
+/***/ 2085:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -232,7 +232,7 @@ var credentials_CoreLoginCredentialsPage = /** @class */ (function () {
                 _this.credForm.controls['username'].reset();
                 _this.credForm.controls['password'].reset();
                 _this.siteId = id;
-                return _this.loginHelper.goToSiteInitialPage(_this.navCtrl, 'CoreCoursesAvailableCoursesPage');
+                return _this.loginHelper.goToSiteInitialPage();
                 // R return this.courseFormatDelegate.openCourse(this.navCtrl, {id: 2, displayname: 'MTN EBU SME TEAM ASSESSMENT' , shortname: 'SME SLES TEST', category: 1, cacherev: 1571967638, calendartype: "", categoryid: 1, categoryname: "Miscellaneous", completionnotify: 0, contacts: [], defaultgroupingid: 0, enablecompletion: 1, enddate: 1604102400, enrollmentmethods: ["manual"], format: "topics", fullname: "MTN EBU SME TEAM ASSESSMENT", groupmode: 0, groupmodeforce: 0, idnumber: "SME01", isEnrolled: false,lang: "en", legacyfiles: 0, marker: 0, maxbytes: 0, newsitems: 1, overviewfiles: [], requested: 0, showgrades: 1, showreports: 1, sortorder: 10001, startdate: 1571526000, summary: "", summaryfiles: [], summaryformat: 1, theme: "", timecreated: 1571501527, timemodified: 1571543395, visible: 1});
             });
         }).catch(function (error) {
