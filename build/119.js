@@ -1,51 +1,94 @@
 webpackJsonp([119],{
 
-/***/ 2067:
+/***/ 2085:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonMessagesDiscussionPageModule", function() { return AddonMessagesDiscussionPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__discussion__ = __webpack_require__(2236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_pipes_module__ = __webpack_require__(65);
+// (C) Copyright 2015 Martin Dougiamas
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 
-// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
-var core = __webpack_require__(0);
 
-// EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 3 modules
-var ionic_angular = __webpack_require__(6);
 
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/index.js + 1 modules
-var _ngx_translate_core = __webpack_require__(3);
 
-// EXTERNAL MODULE: ./src/components/components.module.ts
-var components_module = __webpack_require__(29);
 
-// EXTERNAL MODULE: ./src/directives/directives.module.ts + 2 modules
-var directives_module = __webpack_require__(31);
 
-// EXTERNAL MODULE: ./src/providers/events.ts
-var events = __webpack_require__(11);
 
-// EXTERNAL MODULE: ./src/providers/sites.ts
-var sites = __webpack_require__(1);
+var AddonMessagesDiscussionPageModule = /** @class */ (function () {
+    function AddonMessagesDiscussionPageModule() {
+    }
+    AddonMessagesDiscussionPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__discussion__["a" /* AddonMessagesDiscussionPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_4__components_components_module__["a" /* CoreComponentsModule */],
+                __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__["a" /* CoreDirectivesModule */],
+                __WEBPACK_IMPORTED_MODULE_6__pipes_pipes_module__["a" /* CorePipesModule */],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__discussion__["a" /* AddonMessagesDiscussionPage */]),
+                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+        })
+    ], AddonMessagesDiscussionPageModule);
+    return AddonMessagesDiscussionPageModule;
+}());
 
-// EXTERNAL MODULE: ./src/providers/utils/dom.ts
-var dom = __webpack_require__(4);
+//# sourceMappingURL=discussion.module.js.map
 
-// EXTERNAL MODULE: ./src/providers/groups.ts
-var groups = __webpack_require__(67);
+/***/ }),
 
-// EXTERNAL MODULE: ./src/addon/mod/assign/providers/assign.ts
-var providers_assign = __webpack_require__(73);
+/***/ 2236:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// EXTERNAL MODULE: ./src/addon/mod/assign/providers/assign-offline.ts
-var assign_offline = __webpack_require__(129);
-
-// EXTERNAL MODULE: ./src/addon/mod/assign/providers/helper.ts
-var helper = __webpack_require__(180);
-
-// EXTERNAL MODULE: ./src/components/split-view/split-view.ts
-var split_view = __webpack_require__(25);
-
-// CONCATENATED MODULE: ./src/addon/mod/assign/pages/submission-list/submission-list.ts
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonMessagesDiscussionPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_events__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_sites__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_messages__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_messages_offline__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_sync__ = __webpack_require__(437);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__core_user_providers_user__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_utils_dom__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_utils_utils__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_utils_text__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_logger__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_app__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__classes_animations__ = __webpack_require__(423);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_split_view_split_view__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_infinite_loading_infinite_loading__ = __webpack_require__(993);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_ts_md5_dist_md5__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_ts_md5_dist_md5___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_ts_md5_dist_md5__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_moment__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_moment__);
 // (C) Copyright 2015 Martin Dougiamas
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -68,283 +111,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
-
-
-/**
- * Page that displays a list of submissions of an assignment.
- */
-var submission_list_AddonModAssignSubmissionListPage = /** @class */ (function () {
-    function AddonModAssignSubmissionListPage(navParams, sitesProvider, eventsProvider, domUtils, translate, assignProvider, assignOfflineProvider, assignHelper, groupsProvider) {
-        var _this = this;
-        this.sitesProvider = sitesProvider;
-        this.domUtils = domUtils;
-        this.translate = translate;
-        this.assignProvider = assignProvider;
-        this.assignOfflineProvider = assignOfflineProvider;
-        this.assignHelper = assignHelper;
-        this.groupsProvider = groupsProvider;
-        this.groupId = 0; // Group ID to show.
-        this.groupInfo = {
-            groups: [],
-            separateGroups: false,
-            visibleGroups: false
-        };
-        this.moduleId = navParams.get('moduleId');
-        this.courseId = navParams.get('courseId');
-        this.groupId = navParams.get('groupId');
-        this.selectedStatus = navParams.get('status');
-        if (this.selectedStatus) {
-            if (this.selectedStatus == providers_assign["a" /* AddonModAssignProvider */].NEED_GRADING) {
-                this.title = this.translate.instant('addon.mod_assign.numberofsubmissionsneedgrading');
-            }
-            else {
-                this.title = this.translate.instant('addon.mod_assign.submissionstatus_' + this.selectedStatus);
-            }
-        }
-        else {
-            this.title = this.translate.instant('addon.mod_assign.numberofparticipants');
-        }
-        // Update data if some grade changes.
-        this.gradedObserver = eventsProvider.on(providers_assign["a" /* AddonModAssignProvider */].GRADED_EVENT, function (data) {
-            if (_this.assign && data.assignmentId == _this.assign.id && data.userId == sitesProvider.getCurrentSiteUserId()) {
-                // Grade changed, refresh the data.
-                _this.loaded = false;
-                _this.refreshAllData().finally(function () {
-                    _this.loaded = true;
-                });
-            }
-        }, sitesProvider.getCurrentSiteId());
-    }
-    /**
-     * Component being initialized.
-     */
-    AddonModAssignSubmissionListPage.prototype.ngOnInit = function () {
-        var _this = this;
-        this.fetchAssignment().finally(function () {
-            if (!_this.selectedSubmissionId && _this.splitviewCtrl.isOn() && _this.submissions.length > 0) {
-                // Take first and load it.
-                _this.loadSubmission(_this.submissions[0]);
-            }
-            _this.loaded = true;
-        });
-    };
-    /**
-     * Fetch assignment data.
-     *
-     * @return {Promise<any>} Promise resolved when done.
-     */
-    AddonModAssignSubmissionListPage.prototype.fetchAssignment = function () {
-        var _this = this;
-        // Get assignment data.
-        return this.assignProvider.getAssignment(this.courseId, this.moduleId).then(function (assign) {
-            _this.title = assign.name || _this.title;
-            _this.assign = assign;
-            // Get assignment submissions.
-            return _this.assignProvider.getSubmissions(assign.id);
-        }).then(function (data) {
-            if (!data.canviewsubmissions) {
-                // User shouldn't be able to reach here.
-                return Promise.reject(null);
-            }
-            _this.submissionsData = data;
-            // Check if groupmode is enabled to avoid showing wrong numbers.
-            return _this.groupsProvider.getActivityGroupInfo(_this.assign.cmid, false).then(function (groupInfo) {
-                _this.groupInfo = groupInfo;
-                return _this.setGroup(_this.groupsProvider.validateGroupId(_this.groupId, groupInfo));
-            });
-        }).catch(function (error) {
-            _this.domUtils.showErrorModalDefault(error, 'Error getting assigment data.');
-        });
-    };
-    /**
-     * Set group to see the summary.
-     *
-     * @param  {number}       groupId Group ID.
-     * @return {Promise<any>}         Resolved when done.
-     */
-    AddonModAssignSubmissionListPage.prototype.setGroup = function (groupId) {
-        var _this = this;
-        this.groupId = groupId;
-        this.haveAllParticipants = true;
-        if (!this.sitesProvider.getCurrentSite().wsAvailable('mod_assign_list_participants')) {
-            // Submissions are not displayed in Moodle 3.1 without the local plugin, see MOBILE-2968.
-            this.haveAllParticipants = false;
-            this.submissions = [];
-            return Promise.resolve();
-        }
-        // Fetch submissions and grades.
-        var promises = [
-            this.assignHelper.getSubmissionsUserData(this.assign, this.submissionsData.submissions, this.groupId),
-            // Get assignment grades only if workflow is not enabled to check grading date.
-            !this.assign.markingworkflow ? this.assignProvider.getAssignmentGrades(this.assign.id) : Promise.resolve(null),
-        ];
-        return Promise.all(promises).then(function (_a) {
-            var submissions = _a[0], grades = _a[1];
-            // Filter the submissions to get only the ones with the right status and add some extra data.
-            var getNeedGrading = _this.selectedStatus == providers_assign["a" /* AddonModAssignProvider */].NEED_GRADING, searchStatus = getNeedGrading ? providers_assign["a" /* AddonModAssignProvider */].SUBMISSION_STATUS_SUBMITTED : _this.selectedStatus, promises = [], showSubmissions = [];
-            submissions.forEach(function (submission) {
-                if (!searchStatus || searchStatus == submission.status) {
-                    promises.push(_this.assignOfflineProvider.getSubmissionGrade(_this.assign.id, submission.userid).catch(function () {
-                        // Ignore errors.
-                    }).then(function (data) {
-                        var promise, notSynced = false;
-                        // Load offline grades.
-                        if (data && submission.timemodified < data.timemodified) {
-                            notSynced = true;
-                        }
-                        if (getNeedGrading) {
-                            // Only show the submissions that need to be graded.
-                            promise = _this.assignProvider.needsSubmissionToBeGraded(submission, _this.assign.id);
-                        }
-                        else {
-                            promise = Promise.resolve(true);
-                        }
-                        return promise.then(function (add) {
-                            if (!add) {
-                                return;
-                            }
-                            if (submission.gradingstatus == 'graded' && !_this.assign.markingworkflow) {
-                                // Get the last grade of the submission.
-                                var grade = grades.filter(function (grade) {
-                                    return grade.userid == submission.userid;
-                                }).reduce(function (a, b) {
-                                    return (a.timemodified > b.timemodified ? a : b);
-                                });
-                                if (grade && grade.timemodified < submission.timemodified) {
-                                    submission.gradingstatus = providers_assign["a" /* AddonModAssignProvider */].GRADED_FOLLOWUP_SUBMIT;
-                                }
-                            }
-                            submission.statusColor = _this.assignProvider.getSubmissionStatusColor(submission.status);
-                            submission.gradingColor = _this.assignProvider.getSubmissionGradingStatusColor(submission.gradingstatus);
-                            // Show submission status if not submitted for grading.
-                            if (submission.statusColor != 'success' || !submission.gradingstatus) {
-                                submission.statusTranslated = _this.translate.instant('addon.mod_assign.submissionstatus_' +
-                                    submission.status);
-                            }
-                            else {
-                                submission.statusTranslated = false;
-                            }
-                            if (notSynced) {
-                                submission.gradingStatusTranslationId = 'addon.mod_assign.gradenotsynced';
-                                submission.gradingColor = '';
-                            }
-                            else if (submission.statusColor != 'danger' || submission.gradingColor != 'danger') {
-                                // Show grading status if one of the statuses is not done.
-                                submission.gradingStatusTranslationId =
-                                    _this.assignProvider.getSubmissionGradingStatusTranslationId(submission.gradingstatus);
-                            }
-                            else {
-                                submission.gradingStatusTranslationId = false;
-                            }
-                            showSubmissions.push(submission);
-                        });
-                    }));
-                }
-            });
-            return Promise.all(promises).then(function () {
-                _this.submissions = showSubmissions;
-            });
-        });
-    };
-    /**
-     * Load a certain submission.
-     *
-     * @param {any} submission The submission to load.
-     */
-    AddonModAssignSubmissionListPage.prototype.loadSubmission = function (submission) {
-        if (this.selectedSubmissionId === submission.submitid && this.splitviewCtrl.isOn()) {
-            // Already selected.
-            return;
-        }
-        this.selectedSubmissionId = submission.submitid;
-        this.splitviewCtrl.push('AddonModAssignSubmissionReviewPage', {
-            courseId: this.courseId,
-            moduleId: this.moduleId,
-            submitId: submission.submitid,
-            blindId: submission.blindid
-        });
-    };
-    /**
-     * Refresh all the data.
-     *
-     * @return {Promise<any>} Promise resolved when done.
-     */
-    AddonModAssignSubmissionListPage.prototype.refreshAllData = function () {
-        var _this = this;
-        var promises = [];
-        promises.push(this.assignProvider.invalidateAssignmentData(this.courseId));
-        if (this.assign) {
-            promises.push(this.assignProvider.invalidateAllSubmissionData(this.assign.id));
-            promises.push(this.assignProvider.invalidateAssignmentUserMappingsData(this.assign.id));
-            promises.push(this.assignProvider.invalidateAssignmentGradesData(this.assign.id));
-            promises.push(this.assignProvider.invalidateListParticipantsData(this.assign.id));
-        }
-        return Promise.all(promises).finally(function () {
-            return _this.fetchAssignment();
-        });
-    };
-    /**
-     * Refresh the list.
-     *
-     * @param {any} refresher Refresher.
-     */
-    AddonModAssignSubmissionListPage.prototype.refreshList = function (refresher) {
-        this.refreshAllData().finally(function () {
-            refresher.complete();
-        });
-    };
-    /**
-     * Component being destroyed.
-     */
-    AddonModAssignSubmissionListPage.prototype.ngOnDestroy = function () {
-        this.gradedObserver && this.gradedObserver.off();
-    };
-    __decorate([
-        Object(core["_9" /* ViewChild */])(split_view["a" /* CoreSplitViewComponent */]),
-        __metadata("design:type", split_view["a" /* CoreSplitViewComponent */])
-    ], AddonModAssignSubmissionListPage.prototype, "splitviewCtrl", void 0);
-    AddonModAssignSubmissionListPage = __decorate([
-        Object(core["m" /* Component */])({
-            selector: 'page-addon-mod-assign-submission-list',
-            templateUrl: 'submission-list.html',
-        }),
-        __metadata("design:paramtypes", [ionic_angular["t" /* NavParams */], sites["a" /* CoreSitesProvider */], events["a" /* CoreEventsProvider */],
-            dom["a" /* CoreDomUtilsProvider */], _ngx_translate_core["c" /* TranslateService */],
-            providers_assign["a" /* AddonModAssignProvider */], assign_offline["a" /* AddonModAssignOfflineProvider */],
-            helper["a" /* AddonModAssignHelperProvider */], groups["a" /* CoreGroupsProvider */]])
-    ], AddonModAssignSubmissionListPage);
-    return AddonModAssignSubmissionListPage;
-}());
-
-//# sourceMappingURL=submission-list.js.map
-// CONCATENATED MODULE: ./src/addon/mod/assign/pages/submission-list/submission-list.module.ts
-// (C) Copyright 2015 Martin Dougiamas
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-var submission_list_module___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
 };
 
 
@@ -352,418 +120,1297 @@ var submission_list_module___decorate = (this && this.__decorate) || function (d
 
 
 
-var submission_list_module_AddonModAssignSubmissionListPageModule = /** @class */ (function () {
-    function AddonModAssignSubmissionListPageModule() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Page that displays a message discussion page.
+ */
+var AddonMessagesDiscussionPage = /** @class */ (function () {
+    function AddonMessagesDiscussionPage(eventsProvider, sitesProvider, navParams, userProvider, navCtrl, messagesSync, domUtils, messagesProvider, logger, utils, appProvider, translate, svComponent, messagesOffline, modalCtrl, textUtils) {
+        var _this = this;
+        this.eventsProvider = eventsProvider;
+        this.userProvider = userProvider;
+        this.navCtrl = navCtrl;
+        this.messagesSync = messagesSync;
+        this.domUtils = domUtils;
+        this.messagesProvider = messagesProvider;
+        this.utils = utils;
+        this.appProvider = appProvider;
+        this.translate = translate;
+        this.svComponent = svComponent;
+        this.messagesOffline = messagesOffline;
+        this.modalCtrl = modalCtrl;
+        this.textUtils = textUtils;
+        this.unreadMessageFrom = 0;
+        this.messagesBeingSent = 0;
+        this.pagesLoaded = 1;
+        this.lastMessage = { text: '', timecreated: 0 };
+        this.keepMessageMap = {};
+        this.oldContentHeight = 0;
+        this.scrollBottom = true;
+        this.viewDestroyed = false;
+        this.showLoadingModal = false; // Whether to show a loading modal while fetching data.
+        this.loaded = false;
+        this.showKeyboard = false;
+        this.canLoadMore = false;
+        this.loadMoreError = false;
+        this.messages = [];
+        this.showDelete = false;
+        this.canDelete = false;
+        this.isGroup = false;
+        this.members = {}; // Members that wrote a message, indexed by ID.
+        this.favouriteIcon = 'fa-star';
+        this.favouriteIconSlash = false;
+        this.deleteIcon = 'trash';
+        this.blockIcon = 'close-circle';
+        this.addRemoveIcon = 'person';
+        this.requestContactSent = false;
+        this.requestContactReceived = false;
+        this.isSelf = false;
+        this.muteEnabled = false;
+        this.muteIcon = 'volume-off';
+        this.siteId = sitesProvider.getCurrentSiteId();
+        this.currentUserId = sitesProvider.getCurrentSiteUserId();
+        this.groupMessagingEnabled = this.messagesProvider.isGroupMessagingEnabled();
+        this.muteEnabled = this.messagesProvider.isMuteConversationEnabled();
+        this.logger = logger.getInstance('AddonMessagesDiscussionPage');
+        this.conversationId = navParams.get('conversationId');
+        this.userId = navParams.get('userId');
+        this.showKeyboard = navParams.get('showKeyboard');
+        // Refresh data if this discussion is synchronized automatically.
+        this.syncObserver = eventsProvider.on(__WEBPACK_IMPORTED_MODULE_7__providers_sync__["a" /* AddonMessagesSyncProvider */].AUTO_SYNCED, function (data) {
+            if ((data.userId && data.userId == _this.userId) ||
+                (data.conversationId && data.conversationId == _this.conversationId)) {
+                // Fetch messages.
+                _this.fetchMessages();
+                // Show first warning if any.
+                if (data.warnings && data.warnings[0]) {
+                    _this.domUtils.showErrorModal(data.warnings[0]);
+                }
+            }
+        }, this.siteId);
+        // Refresh data if info of a mamber of the conversation have changed.
+        this.memberInfoObserver = eventsProvider.on(__WEBPACK_IMPORTED_MODULE_5__providers_messages__["a" /* AddonMessagesProvider */].MEMBER_INFO_CHANGED_EVENT, function (data) {
+            if (data.userId && (_this.members[data.userId] || _this.otherMember && data.userId == _this.otherMember.id)) {
+                _this.fetchData();
+            }
+        }, this.siteId);
     }
-    AddonModAssignSubmissionListPageModule = submission_list_module___decorate([
-        Object(core["I" /* NgModule */])({
-            declarations: [
-                submission_list_AddonModAssignSubmissionListPage,
-            ],
-            imports: [
-                components_module["a" /* CoreComponentsModule */],
-                directives_module["a" /* CoreDirectivesModule */],
-                ionic_angular["l" /* IonicPageModule */].forChild(submission_list_AddonModAssignSubmissionListPage),
-                _ngx_translate_core["b" /* TranslateModule */].forChild()
-            ],
-        })
-    ], AddonModAssignSubmissionListPageModule);
-    return AddonModAssignSubmissionListPageModule;
+    /**
+     * Adds a new message to the message list.
+     *
+     * @param {any} message Message to be added.
+     * @param {boolean} [keep=true] If set the keep flag or not.
+     */
+    AddonMessagesDiscussionPage.prototype.addMessage = function (message, keep) {
+        if (keep === void 0) { keep = true; }
+        /* Create a hash to identify the message. The text of online messages isn't reliable because it can have random data
+           like VideoJS ID. Try to use id and fallback to text for offline messages. */
+        message.hash = __WEBPACK_IMPORTED_MODULE_17_ts_md5_dist_md5__["Md5"].hashAsciiStr(String(message.id || message.text || '')) + '#' + message.timecreated + '#' +
+            message.useridfrom;
+        if (typeof this.keepMessageMap[message.hash] === 'undefined') {
+            // Message not added to the list. Add it now.
+            this.messages.push(message);
+        }
+        // Message needs to be kept in the list.
+        this.keepMessageMap[message.hash] = keep;
+    };
+    /**
+     * Remove a message if it shouldn't be in the list anymore.
+     *
+     * @param {string} hash Hash of the message to be removed.
+     */
+    AddonMessagesDiscussionPage.prototype.removeMessage = function (hash) {
+        if (this.keepMessageMap[hash]) {
+            // Selected to keep it, clear the flag.
+            this.keepMessageMap[hash] = false;
+            return;
+        }
+        delete this.keepMessageMap[hash];
+        var position = this.messages.findIndex(function (message) {
+            return message.hash == hash;
+        });
+        if (position >= 0) {
+            this.messages.splice(position, 1);
+        }
+    };
+    /**
+     * Runs when the page has loaded. This event only happens once per page being created.
+     * If a page leaves but is cached, then this event will not fire again on a subsequent viewing.
+     * Setup code for the page.
+     */
+    AddonMessagesDiscussionPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        // Disable the profile button if we're already coming from a profile.
+        var backViewPage = this.navCtrl.getPrevious() && this.navCtrl.getPrevious().component.name;
+        this.showInfo = !backViewPage || backViewPage !== 'CoreUserProfilePage';
+        // Recalculate footer position when keyboard is shown or hidden.
+        this.keyboardObserver = this.eventsProvider.on(__WEBPACK_IMPORTED_MODULE_3__providers_events__["a" /* CoreEventsProvider */].KEYBOARD_CHANGE, function (kbHeight) {
+            _this.content.resize();
+        });
+        this.fetchData();
+    };
+    /**
+     * Convenience function to fetch the conversation data.
+     *
+     * @return {Promise<any>} Resolved when done.
+     */
+    AddonMessagesDiscussionPage.prototype.fetchData = function () {
+        var _this = this;
+        var loader;
+        if (this.showLoadingModal) {
+            loader = this.domUtils.showModalLoading();
+        }
+        if (!this.groupMessagingEnabled && this.userId) {
+            // Get the user profile to retrieve the user fullname and image.
+            this.userProvider.getProfile(this.userId, undefined, true).then(function (user) {
+                if (!_this.title) {
+                    _this.title = user.fullname;
+                }
+                _this.conversationImage = user.profileimageurl;
+            });
+        }
+        // Synchronize messages if needed.
+        return this.messagesSync.syncDiscussion(this.conversationId, this.userId).catch(function () {
+            // Ignore errors.
+        }).then(function (warnings) {
+            if (warnings && warnings[0]) {
+                _this.domUtils.showErrorModal(warnings[0]);
+            }
+            if (_this.groupMessagingEnabled) {
+                // Get the conversation ID if it exists and we don't have it yet.
+                return _this.getConversation(_this.conversationId, _this.userId).then(function (exists) {
+                    var promises = [];
+                    if (exists) {
+                        // Fetch the messages for the first time.
+                        promises.push(_this.fetchMessages());
+                    }
+                    if (_this.userId) {
+                        // Get the member info. Invalidate first to make sure we get the latest status.
+                        promises.push(_this.messagesProvider.invalidateMemberInfo(_this.userId).catch(function () {
+                            // Shouldn't happen.
+                        }).then(function () {
+                            return _this.messagesProvider.getMemberInfo(_this.userId);
+                        }).then(function (member) {
+                            _this.otherMember = member;
+                            if (!exists && member) {
+                                _this.conversationImage = member.profileimageurl;
+                                _this.title = member.fullname;
+                            }
+                            _this.blockIcon = _this.otherMember && _this.otherMember.isblocked ? 'checkmark-circle' : 'close-circle';
+                        }));
+                    }
+                    else {
+                        _this.otherMember = null;
+                    }
+                    return Promise.all(promises);
+                });
+            }
+            else {
+                _this.otherMember = null;
+                // Fetch the messages for the first time.
+                return _this.fetchMessages().then(function () {
+                    if (!_this.title && _this.messages.length) {
+                        // Didn't receive the fullname via argument. Try to get it from messages.
+                        // It's possible that name cannot be resolved when no messages were yet exchanged.
+                        if (_this.messages[0].useridto != _this.currentUserId) {
+                            _this.title = _this.messages[0].usertofullname || '';
+                        }
+                        else {
+                            _this.title = _this.messages[0].userfromfullname || '';
+                        }
+                    }
+                });
+            }
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'addon.messages.errorwhileretrievingmessages', true);
+        }).finally(function () {
+            _this.checkCanDelete();
+            _this.resizeContent();
+            _this.loaded = true;
+            _this.setPolling(); // Make sure we're polling messages.
+            _this.setContactRequestInfo();
+            _this.setFooterType();
+            loader && loader.dismiss();
+        });
+    };
+    /**
+     * Runs when the page has fully entered and is now the active page.
+     * This event will fire, whether it was the first load or a cached page.
+     */
+    AddonMessagesDiscussionPage.prototype.ionViewDidEnter = function () {
+        this.setPolling();
+    };
+    /**
+     * Runs when the page is about to leave and no longer be the active page.
+     */
+    AddonMessagesDiscussionPage.prototype.ionViewWillLeave = function () {
+        this.unsetPolling();
+    };
+    /**
+     * Convenience function to fetch messages.
+     *
+     * @return {Promise<any>} Resolved when done.
+     */
+    AddonMessagesDiscussionPage.prototype.fetchMessages = function () {
+        var _this = this;
+        this.loadMoreError = false;
+        if (this.messagesBeingSent > 0) {
+            // We do not poll while a message is being sent or we could confuse the user.
+            // Otherwise, his message would disappear from the list, and he'd have to wait for the interval to check for messages.
+            return Promise.reject(null);
+        }
+        else if (this.fetching) {
+            // Already fetching.
+            return Promise.reject(null);
+        }
+        else if (this.groupMessagingEnabled && !this.conversationId) {
+            // Don't have enough data to fetch messages.
+            return Promise.reject(null);
+        }
+        if (this.conversationId) {
+            this.logger.debug("Polling new messages for conversation '" + this.conversationId + "'");
+        }
+        else {
+            this.logger.debug("Polling new messages for discussion with user '" + this.userId + "'");
+        }
+        this.fetching = true;
+        // Wait for synchronization process to finish.
+        return this.messagesSync.waitForSyncConversation(this.conversationId, this.userId).then(function () {
+            // Fetch messages. Invalidate the cache before fetching.
+            if (_this.groupMessagingEnabled) {
+                return _this.messagesProvider.invalidateConversationMessages(_this.conversationId).catch(function () {
+                    // Ignore errors.
+                }).then(function () {
+                    return _this.getConversationMessages(_this.pagesLoaded);
+                });
+            }
+            else {
+                return _this.messagesProvider.invalidateDiscussionCache(_this.userId).catch(function () {
+                    // Ignore errors.
+                }).then(function () {
+                    return _this.getDiscussionMessages(_this.pagesLoaded);
+                });
+            }
+        }).then(function (messages) {
+            _this.loadMessages(messages);
+        }).finally(function () {
+            _this.fetching = false;
+        });
+    };
+    /**
+     * Format and load a list of messages into the view.
+     *
+     * @param {any[]} messages Messages to load.
+     */
+    AddonMessagesDiscussionPage.prototype.loadMessages = function (messages) {
+        var _this = this;
+        if (this.viewDestroyed) {
+            return;
+        }
+        // Check if we are at the bottom to scroll it after render.
+        // Use a 5px error margin because in iOS there is 1px difference for some reason.
+        this.scrollBottom = Math.abs(this.domUtils.getScrollHeight(this.content) - this.domUtils.getScrollTop(this.content) -
+            this.domUtils.getContentHeight(this.content)) < 5;
+        if (this.messagesBeingSent > 0) {
+            // Ignore polling due to a race condition.
+            return;
+        }
+        // Add new messages to the list and mark the messages that should still be displayed.
+        messages.forEach(function (message) {
+            _this.addMessage(message);
+        });
+        // Remove messages that shouldn't be in the list anymore.
+        for (var hash in this.keepMessageMap) {
+            this.removeMessage(hash);
+        }
+        // Sort the messages.
+        this.messagesProvider.sortMessages(this.messages);
+        // Calculate which messages need to display the date or user data.
+        this.messages.forEach(function (message, index) {
+            message.showDate = _this.showDate(message, _this.messages[index - 1]);
+            message.showUserData = _this.showUserData(message, _this.messages[index - 1]);
+            message.showTail = _this.showTail(message, _this.messages[index + 1]);
+        });
+        // Call resize to recalculate the dimensions.
+        this.content && this.content.resize();
+        // If we received a new message while using group messaging, force mark messages as read.
+        var last = this.messages[this.messages.length - 1], forceMark = this.groupMessagingEnabled && last && last.useridfrom != this.currentUserId && this.lastMessage.text != ''
+            && (last.text !== this.lastMessage.text || last.timecreated !== this.lastMessage.timecreated);
+        // Notify that there can be a new message.
+        this.notifyNewMessage();
+        // Mark retrieved messages as read if they are not.
+        this.markMessagesAsRead(forceMark);
+    };
+    /**
+     * Get the conversation.
+     *
+     * @param {number} conversationId Conversation ID.
+     * @param {number} userId User ID.
+     * @return {Promise<boolean>} Promise resolved with a boolean: whether the conversation exists or not.
+     */
+    AddonMessagesDiscussionPage.prototype.getConversation = function (conversationId, userId) {
+        var _this = this;
+        var promise, fallbackConversation;
+        // Try to get the conversationId if we don't have it.
+        if (conversationId) {
+            promise = Promise.resolve(conversationId);
+        }
+        else {
+            if (userId == this.currentUserId && this.messagesProvider.isSelfConversationEnabled()) {
+                promise = this.messagesProvider.getSelfConversation();
+            }
+            else {
+                promise = this.messagesProvider.getConversationBetweenUsers(userId, undefined, true);
+            }
+            promise = promise.then(function (conversation) {
+                fallbackConversation = conversation;
+                return conversation.id;
+            });
+        }
+        return promise.then(function (conversationId) {
+            // Retrieve the conversation. Invalidate data first to get the right unreadcount.
+            return _this.messagesProvider.invalidateConversation(conversationId).catch(function () {
+                // Ignore errors.
+            }).then(function () {
+                return _this.messagesProvider.getConversation(conversationId, undefined, true);
+            }).catch(function (error) {
+                // Get conversation failed, use the fallback one if we have it.
+                if (fallbackConversation) {
+                    return fallbackConversation;
+                }
+                return Promise.reject(error);
+            }).then(function (conversation) {
+                _this.conversation = conversation;
+                if (conversation) {
+                    _this.conversationId = conversation.id;
+                    _this.title = conversation.name;
+                    _this.conversationImage = conversation.imageurl;
+                    _this.isGroup = conversation.type == __WEBPACK_IMPORTED_MODULE_5__providers_messages__["a" /* AddonMessagesProvider */].MESSAGE_CONVERSATION_TYPE_GROUP;
+                    _this.favouriteIcon = 'fa-star';
+                    _this.favouriteIconSlash = conversation.isfavourite;
+                    _this.muteIcon = conversation.ismuted ? 'volume-up' : 'volume-off';
+                    if (!_this.isGroup) {
+                        _this.userId = conversation.userid;
+                    }
+                    _this.isSelf = conversation.type == __WEBPACK_IMPORTED_MODULE_5__providers_messages__["a" /* AddonMessagesProvider */].MESSAGE_CONVERSATION_TYPE_SELF;
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            });
+        }, function (error) {
+            // Probably conversation does not exist or user is offline. Try to load offline messages.
+            _this.isSelf = userId == _this.currentUserId;
+            return _this.messagesOffline.getMessages(userId).then(function (messages) {
+                if (messages && messages.length) {
+                    // We have offline messages, this probably means that the conversation didn't exist. Don't display error.
+                    messages.forEach(function (message) {
+                        message.pending = true;
+                        message.text = message.smallmessage;
+                    });
+                    _this.loadMessages(messages);
+                }
+                else if (error.errorcode != 'errorconversationdoesnotexist') {
+                    // Display the error.
+                    return Promise.reject(error);
+                }
+                return false;
+            });
+        });
+    };
+    /**
+     * Get the messages of the conversation. Used if group messaging is supported.
+     *
+     * @param {number} pagesToLoad Number of "pages" to load.
+     * @param  {number} [offset=0] Offset for message list.
+     * @return {Promise<any[]>} Promise resolved with the list of messages.
+     */
+    AddonMessagesDiscussionPage.prototype.getConversationMessages = function (pagesToLoad, offset) {
+        var _this = this;
+        if (offset === void 0) { offset = 0; }
+        var excludePending = offset > 0;
+        return this.messagesProvider.getConversationMessages(this.conversationId, excludePending, offset).then(function (result) {
+            pagesToLoad--;
+            // Treat members. Don't use CoreUtilsProvider.arrayToObject because we don't want to override the existing object.
+            if (result.members) {
+                result.members.forEach(function (member) {
+                    _this.members[member.id] = member;
+                });
+            }
+            if (pagesToLoad > 0 && result.canLoadMore) {
+                offset += __WEBPACK_IMPORTED_MODULE_5__providers_messages__["a" /* AddonMessagesProvider */].LIMIT_MESSAGES;
+                // Get more messages.
+                return _this.getConversationMessages(pagesToLoad, offset).then(function (nextMessages) {
+                    return result.messages.concat(nextMessages);
+                });
+            }
+            else {
+                // No more messages to load, return them.
+                _this.canLoadMore = result.canLoadMore;
+                return result.messages;
+            }
+        });
+    };
+    /**
+     * Get a discussion. Can load several "pages".
+     *
+     * @param  {number}  pagesToLoad          Number of pages to load.
+     * @param  {number}  [lfReceivedUnread=0] Number of unread received messages already fetched, so fetch will be done from this.
+     * @param  {number}  [lfReceivedRead=0]   Number of read received messages already fetched, so fetch will be done from this.
+     * @param  {number}  [lfSentUnread=0]     Number of unread sent messages already fetched, so fetch will be done from this.
+     * @param  {number}  [lfSentRead=0]       Number of read sent messages already fetched, so fetch will be done from this.
+     * @return {Promise<any>}  Resolved when done.
+     */
+    AddonMessagesDiscussionPage.prototype.getDiscussionMessages = function (pagesToLoad, lfReceivedUnread, lfReceivedRead, lfSentUnread, lfSentRead) {
+        var _this = this;
+        if (lfReceivedUnread === void 0) { lfReceivedUnread = 0; }
+        if (lfReceivedRead === void 0) { lfReceivedRead = 0; }
+        if (lfSentUnread === void 0) { lfSentUnread = 0; }
+        if (lfSentRead === void 0) { lfSentRead = 0; }
+        // Only get offline messages if we're loading the first "page".
+        var excludePending = lfReceivedUnread > 0 || lfReceivedRead > 0 || lfSentUnread > 0 || lfSentRead > 0;
+        // Get next messages.
+        return this.messagesProvider.getDiscussion(this.userId, excludePending, lfReceivedUnread, lfReceivedRead, lfSentUnread, lfSentRead).then(function (result) {
+            pagesToLoad--;
+            if (pagesToLoad > 0 && result.canLoadMore) {
+                // More pages to load. Calculate new limit froms.
+                result.messages.forEach(function (message) {
+                    if (!message.pending) {
+                        if (message.useridfrom == _this.userId) {
+                            if (message.read) {
+                                lfReceivedRead++;
+                            }
+                            else {
+                                lfReceivedUnread++;
+                            }
+                        }
+                        else {
+                            if (message.read) {
+                                lfSentRead++;
+                            }
+                            else {
+                                lfSentUnread++;
+                            }
+                        }
+                    }
+                });
+                // Get next messages.
+                return _this.getDiscussionMessages(pagesToLoad, lfReceivedUnread, lfReceivedRead, lfSentUnread, lfSentRead)
+                    .then(function (nextMessages) {
+                    return result.messages.concat(nextMessages);
+                });
+            }
+            else {
+                // No more messages to load, return them.
+                _this.canLoadMore = result.canLoadMore;
+                return result.messages;
+            }
+        });
+    };
+    /**
+     * Mark messages as read.
+     */
+    AddonMessagesDiscussionPage.prototype.markMessagesAsRead = function (forceMark) {
+        var _this = this;
+        var readChanged = false;
+        var promises = [];
+        if (this.messagesProvider.isMarkAllMessagesReadEnabled()) {
+            var messageUnreadFound = false;
+            // Mark all messages at a time if there is any unread message.
+            if (forceMark) {
+                messageUnreadFound = true;
+            }
+            else if (this.groupMessagingEnabled) {
+                messageUnreadFound = this.conversation && this.conversation.unreadcount > 0 && this.conversationId > 0;
+            }
+            else {
+                for (var x in this.messages) {
+                    var message = this.messages[x];
+                    // If an unread message is found, mark all messages as read.
+                    if (message.useridfrom != this.currentUserId && message.read == 0) {
+                        messageUnreadFound = true;
+                        break;
+                    }
+                }
+            }
+            if (messageUnreadFound) {
+                this.setUnreadLabelPosition();
+                var promise = void 0;
+                if (this.groupMessagingEnabled) {
+                    promise = this.messagesProvider.markAllConversationMessagesRead(this.conversationId);
+                }
+                else {
+                    promise = this.messagesProvider.markAllMessagesRead(this.userId).then(function () {
+                        // Mark all messages as read.
+                        _this.messages.forEach(function (message) {
+                            message.read = 1;
+                        });
+                    });
+                }
+                promises.push(promise.then(function () {
+                    readChanged = true;
+                }));
+            }
+        }
+        else {
+            this.setUnreadLabelPosition();
+            // Mark each message as read one by one.
+            this.messages.forEach(function (message) {
+                // If the message is unread, call this.messagesProvider.markMessageRead.
+                if (message.useridfrom != _this.currentUserId && message.read == 0) {
+                    promises.push(_this.messagesProvider.markMessageRead(message.id).then(function () {
+                        readChanged = true;
+                        message.read = 1;
+                    }));
+                }
+            });
+        }
+        Promise.all(promises).finally(function () {
+            if (readChanged) {
+                _this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_5__providers_messages__["a" /* AddonMessagesProvider */].READ_CHANGED_EVENT, {
+                    conversationId: _this.conversationId,
+                    userId: _this.userId
+                }, _this.siteId);
+            }
+        });
+    };
+    /**
+     * Notify the last message found so discussions list controller can tell if last message should be updated.
+     */
+    AddonMessagesDiscussionPage.prototype.notifyNewMessage = function () {
+        var last = this.messages[this.messages.length - 1];
+        var trigger = false;
+        if (!last) {
+            this.lastMessage = { text: '', timecreated: 0 };
+            trigger = true;
+        }
+        else if (last.text !== this.lastMessage.text || last.timecreated !== this.lastMessage.timecreated) {
+            this.lastMessage = { text: last.text, timecreated: last.timecreated };
+            trigger = true;
+        }
+        if (trigger) {
+            // Update discussions last message.
+            this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_5__providers_messages__["a" /* AddonMessagesProvider */].NEW_MESSAGE_EVENT, {
+                conversationId: this.conversationId,
+                userId: this.userId,
+                message: this.lastMessage.text,
+                timecreated: this.lastMessage.timecreated,
+                isfavourite: this.conversation && this.conversation.isfavourite,
+                type: this.conversation && this.conversation.type
+            }, this.siteId);
+            // Update navBar links and buttons.
+            var newCanDelete = (last && last.id && this.messages.length == 1) || this.messages.length > 1;
+            if (this.canDelete != newCanDelete) {
+                this.checkCanDelete();
+            }
+        }
+    };
+    /**
+     * Set the place where the unread label position has to be.
+     */
+    AddonMessagesDiscussionPage.prototype.setUnreadLabelPosition = function () {
+        if (this.unreadMessageFrom != 0) {
+            return;
+        }
+        if (this.groupMessagingEnabled) {
+            // Use the unreadcount from the conversation to calculate where should the label be placed.
+            if (this.conversation && this.conversation.unreadcount > 0 && this.messages) {
+                // Iterate over messages to find the right message using the unreadcount. Skip offline messages and own messages.
+                var found = 0;
+                for (var i = this.messages.length - 1; i >= 0; i--) {
+                    var message = this.messages[i];
+                    if (!message.pending && message.useridfrom != this.currentUserId) {
+                        found++;
+                        if (found == this.conversation.unreadcount) {
+                            this.unreadMessageFrom = parseInt(message.id, 10);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        else {
+            var previousMessageRead = false;
+            for (var x in this.messages) {
+                var message = this.messages[x];
+                if (message.useridfrom != this.currentUserId) {
+                    var unreadFrom = message.read == 0 && previousMessageRead;
+                    if (unreadFrom) {
+                        // Save where the label is placed.
+                        this.unreadMessageFrom = parseInt(message.id, 10);
+                        break;
+                    }
+                    previousMessageRead = message.read != 0;
+                }
+            }
+        }
+        // Do not update the message unread from label on next refresh.
+        if (this.unreadMessageFrom == 0) {
+            // Using negative to indicate the label is not placed but should not be placed.
+            this.unreadMessageFrom = -1;
+        }
+    };
+    /**
+     * Check if there's any message in the list that can be deleted.
+     */
+    AddonMessagesDiscussionPage.prototype.checkCanDelete = function () {
+        // All messages being sent should be at the end of the list.
+        var first = this.messages[0];
+        this.canDelete = first && !first.sending;
+    };
+    /**
+     * Hide unread label when sending messages.
+     */
+    AddonMessagesDiscussionPage.prototype.hideUnreadLabel = function () {
+        if (this.unreadMessageFrom > 0) {
+            this.unreadMessageFrom = -1;
+        }
+    };
+    /**
+     * Wait until fetching is false.
+     * @return {Promise<void>} Resolved when done.
+     */
+    AddonMessagesDiscussionPage.prototype.waitForFetch = function () {
+        var _this = this;
+        if (!this.fetching) {
+            return Promise.resolve();
+        }
+        var deferred = this.utils.promiseDefer();
+        setTimeout(function () {
+            return _this.waitForFetch().finally(function () {
+                deferred.resolve();
+            });
+        }, 400);
+        return deferred.promise;
+    };
+    /**
+     * Set a polling to get new messages every certain time.
+     */
+    AddonMessagesDiscussionPage.prototype.setPolling = function () {
+        var _this = this;
+        if (this.groupMessagingEnabled && !this.conversationId) {
+            // Don't have enough data to poll messages.
+            return;
+        }
+        if (!this.polling) {
+            // Start polling.
+            this.polling = setInterval(function () {
+                _this.fetchMessages().catch(function () {
+                    // Ignore errors.
+                });
+            }, __WEBPACK_IMPORTED_MODULE_5__providers_messages__["a" /* AddonMessagesProvider */].POLL_INTERVAL);
+        }
+    };
+    /**
+     * Unset polling.
+     */
+    AddonMessagesDiscussionPage.prototype.unsetPolling = function () {
+        if (this.polling) {
+            this.logger.debug("Cancelling polling for conversation with user '" + this.userId + "'");
+            clearInterval(this.polling);
+            this.polling = undefined;
+        }
+    };
+    /**
+     * Copy message to clipboard.
+     *
+     * @param {any} message Message to be copied.
+     */
+    AddonMessagesDiscussionPage.prototype.copyMessage = function (message) {
+        var text = this.textUtils.decodeHTMLEntities(message.smallmessage || message.text || '');
+        this.utils.copyToClipboard(text);
+    };
+    /**
+     * Function to delete a message.
+     *
+     * @param {any} message  Message object to delete.
+     * @param {number} index Index where the message is to delete it from the view.
+     */
+    AddonMessagesDiscussionPage.prototype.deleteMessage = function (message, index) {
+        var _this = this;
+        var canDeleteAll = this.conversation && this.conversation.candeletemessagesforallusers, langKey = message.pending || canDeleteAll || this.isSelf ? 'core.areyousure' :
+            'addon.messages.deletemessageconfirmation', options = {};
+        if (canDeleteAll && !message.pending) {
+            // Show delete for all checkbox.
+            options.inputs = [{
+                    type: 'checkbox',
+                    name: 'deleteforall',
+                    checked: false,
+                    value: true,
+                    label: this.translate.instant('addon.messages.deleteforeveryone')
+                }];
+        }
+        this.domUtils.showConfirm(this.translate.instant(langKey), undefined, undefined, undefined, options).then(function (data) {
+            var modal = _this.domUtils.showModalLoading('core.deleting', true);
+            return _this.messagesProvider.deleteMessage(message, data && data[0]).then(function () {
+                // Remove message from the list without having to wait for re-fetch.
+                _this.messages.splice(index, 1);
+                _this.removeMessage(message.hash);
+                _this.notifyNewMessage();
+                _this.fetchMessages(); // Re-fetch messages to update cached data.
+            }).finally(function () {
+                modal.dismiss();
+            });
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'addon.messages.errordeletemessage', true);
+        });
+    };
+    /**
+     * Function to load previous messages.
+     *
+     * @param {any} [infiniteComplete] Infinite scroll complete function. Only used from core-infinite-loading.
+     * @return {Promise<any>} Resolved when done.
+     */
+    AddonMessagesDiscussionPage.prototype.loadPrevious = function (infiniteComplete) {
+        var _this = this;
+        var infiniteHeight = this.infinite ? this.infinite.getHeight() : 0;
+        var scrollHeight = this.domUtils.getScrollHeight(this.content);
+        // If there is an ongoing fetch, wait for it to finish.
+        return this.waitForFetch().finally(function () {
+            _this.pagesLoaded++;
+            _this.fetchMessages().then(function () {
+                // Try to keep the scroll position.
+                var scrollBottom = scrollHeight - _this.domUtils.getScrollTop(_this.content);
+                if (_this.canLoadMore && infiniteHeight && _this.infinite) {
+                    // The height of the infinite is different while spinner is shown. Add that difference.
+                    infiniteHeight = infiniteHeight - _this.infinite.getHeight();
+                }
+                else if (!_this.canLoadMore) {
+                    // Can't load more, take into account the full height of the infinite loading since it will disappear now.
+                    infiniteHeight = infiniteHeight || (_this.infinite ? _this.infinite.getHeight() : 0);
+                }
+                _this.keepScroll(scrollHeight, scrollBottom, infiniteHeight);
+            }).catch(function (error) {
+                _this.loadMoreError = true; // Set to prevent infinite calls with infinite-loading.
+                _this.pagesLoaded--;
+                _this.domUtils.showErrorModalDefault(error, 'addon.messages.errorwhileretrievingmessages', true);
+            }).finally(function () {
+                infiniteComplete && infiniteComplete();
+            });
+        });
+    };
+    /**
+     * Keep scroll position after loading previous messages.
+     * We don't use resizeContent because the approach used is different and it isn't easy to calculate these positions.
+     */
+    AddonMessagesDiscussionPage.prototype.keepScroll = function (oldScrollHeight, oldScrollBottom, infiniteHeight, retries) {
+        var _this = this;
+        retries = retries || 0;
+        setTimeout(function () {
+            var newScrollHeight = _this.domUtils.getScrollHeight(_this.content);
+            if (newScrollHeight == oldScrollHeight) {
+                // Height hasn't changed yet. Retry if max retries haven't been reached.
+                if (retries <= 10) {
+                    _this.keepScroll(oldScrollHeight, oldScrollBottom, infiniteHeight, retries + 1);
+                }
+                return;
+            }
+            var scrollTo = newScrollHeight - oldScrollBottom + infiniteHeight;
+            _this.domUtils.scrollTo(_this.content, 0, scrollTo, 0);
+        }, 30);
+    };
+    /**
+     * Content or scroll has been resized. For content, only call it if it's been added on top.
+     */
+    AddonMessagesDiscussionPage.prototype.resizeContent = function () {
+        var _this = this;
+        var top = this.content.getContentDimensions().scrollTop;
+        this.content.resize();
+        // Wait for new content height to be calculated.
+        setTimeout(function () {
+            // Visible content size changed, maintain the bottom position.
+            if (!_this.viewDestroyed && _this.content && _this.domUtils.getContentHeight(_this.content) != _this.oldContentHeight) {
+                if (!top) {
+                    top = _this.content.getContentDimensions().scrollTop;
+                }
+                top += _this.oldContentHeight - _this.domUtils.getContentHeight(_this.content);
+                _this.oldContentHeight = _this.domUtils.getContentHeight(_this.content);
+                _this.domUtils.scrollTo(_this.content, 0, top, 0);
+            }
+        });
+    };
+    /**
+     * Scroll bottom when render has finished.
+     */
+    AddonMessagesDiscussionPage.prototype.scrollToBottom = function () {
+        var _this = this;
+        // Check if scroll is at bottom. If so, scroll bottom after rendering since there might be something new.
+        if (this.scrollBottom) {
+            // Need a timeout to leave time to the view to be rendered.
+            setTimeout(function () {
+                if (!_this.viewDestroyed) {
+                    _this.domUtils.scrollToBottom(_this.content, 0);
+                }
+            });
+            this.scrollBottom = false;
+        }
+    };
+    /**
+     * Sends a message to the server.
+     *
+     * @param {string} text Message text.
+     */
+    AddonMessagesDiscussionPage.prototype.sendMessage = function (text) {
+        var _this = this;
+        var message;
+        this.hideUnreadLabel();
+        this.showDelete = false;
+        this.scrollBottom = true;
+        message = {
+            pending: true,
+            sending: true,
+            useridfrom: this.currentUserId,
+            smallmessage: text,
+            text: text,
+            timecreated: new Date().getTime()
+        };
+        message.showDate = this.showDate(message, this.messages[this.messages.length - 1]);
+        this.addMessage(message, false);
+        this.messagesBeingSent++;
+        // If there is an ongoing fetch, wait for it to finish.
+        // Otherwise, if a message is sent while fetching it could disappear until the next fetch.
+        this.waitForFetch().finally(function () {
+            var promise;
+            if (_this.conversationId) {
+                promise = _this.messagesProvider.sendMessageToConversation(_this.conversation, text);
+            }
+            else {
+                promise = _this.messagesProvider.sendMessage(_this.userId, text);
+            }
+            promise.then(function (data) {
+                var promise;
+                _this.messagesBeingSent--;
+                if (data.sent) {
+                    if (!_this.conversationId && data.message && data.message.conversationid) {
+                        // Message sent to a new conversation, try to load the conversation.
+                        promise = _this.getConversation(data.message.conversationid, _this.userId).then(function () {
+                            // Now fetch messages.
+                            return _this.fetchMessages();
+                        }).finally(function () {
+                            // Start polling messages now that the conversation exists.
+                            _this.setPolling();
+                        });
+                    }
+                    else {
+                        // Message was sent, fetch messages right now.
+                        promise = _this.fetchMessages();
+                    }
+                }
+                else {
+                    promise = Promise.reject(null);
+                }
+                promise.catch(function () {
+                    // Fetch failed or is offline message, mark the message as sent.
+                    // If fetch is successful there's no need to mark it because the fetch will already show the message received.
+                    message.sending = false;
+                    if (data.sent) {
+                        // Message sent to server, not pending anymore.
+                        message.pending = false;
+                    }
+                    else if (data.message) {
+                        message.timecreated = data.message.timecreated;
+                    }
+                    _this.notifyNewMessage();
+                });
+            }).catch(function (error) {
+                _this.messagesBeingSent--;
+                // Only close the keyboard if an error happens.
+                // We want the user to be able to send multiple messages without the keyboard being closed.
+                _this.appProvider.closeKeyboard();
+                _this.domUtils.showErrorModalDefault(error, 'addon.messages.messagenotsent', true);
+                _this.removeMessage(message.hash);
+            });
+        });
+    };
+    /**
+     * Check date should be shown on message list for the current message.
+     * If date has changed from previous to current message it should be shown.
+     *
+     * @param {any} message       Current message where to show the date.
+     * @param {any} [prevMessage] Previous message where to compare the date with.
+     * @return {boolean}  If date has changed and should be shown.
+     */
+    AddonMessagesDiscussionPage.prototype.showDate = function (message, prevMessage) {
+        if (!prevMessage) {
+            // First message, show it.
+            return true;
+        }
+        // Check if day has changed.
+        return !__WEBPACK_IMPORTED_MODULE_18_moment__(message.timecreated).isSame(prevMessage.timecreated, 'day');
+    };
+    /**
+     * Check if the user info should be displayed for the current message.
+     * User data is only displayed for group conversations if the previous message was from another user.
+     *
+     * @param {any} message Current message where to show the user info.
+     * @param {any} [prevMessage] Previous message.
+     * @return {boolean} Whether user data should be shown.
+     */
+    AddonMessagesDiscussionPage.prototype.showUserData = function (message, prevMessage) {
+        return this.isGroup && message.useridfrom != this.currentUserId && this.members[message.useridfrom] &&
+            (!prevMessage || prevMessage.useridfrom != message.useridfrom || message.showDate);
+    };
+    /**
+     * Check if a css tail should be shown.
+     *
+     * @param {any} message Current message where to show the user info.
+     * @param {any} [nextMessage] Next message.
+     * @return {boolean} Whether user data should be shown.
+     */
+    AddonMessagesDiscussionPage.prototype.showTail = function (message, nextMessage) {
+        return !nextMessage || nextMessage.useridfrom != message.useridfrom || nextMessage.showDate;
+    };
+    /**
+     * Toggles delete state.
+     */
+    AddonMessagesDiscussionPage.prototype.toggleDelete = function () {
+        this.showDelete = !this.showDelete;
+    };
+    /**
+     * View info. If it's an individual conversation, go to the user profile.
+     * If it's a group conversation, view info about the group.
+     */
+    AddonMessagesDiscussionPage.prototype.viewInfo = function () {
+        var _this = this;
+        if (this.isGroup) {
+            // Display the group information.
+            var modal = this.modalCtrl.create('AddonMessagesConversationInfoPage', {
+                conversationId: this.conversationId
+            });
+            modal.present();
+            modal.onDidDismiss(function (userId) {
+                if (typeof userId != 'undefined') {
+                    // Open user conversation.
+                    if (_this.svComponent) {
+                        // Notify the left pane to load it, this way the right conversation will be highlighted.
+                        _this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_5__providers_messages__["a" /* AddonMessagesProvider */].OPEN_CONVERSATION_EVENT, { userId: userId }, _this.siteId);
+                    }
+                    else {
+                        // Open the discussion in a new view.
+                        _this.navCtrl.push('AddonMessagesDiscussionPage', { userId: userId });
+                    }
+                }
+            });
+        }
+        else {
+            // Open the user profile.
+            var navCtrl = this.svComponent ? this.svComponent.getMasterNav() : this.navCtrl;
+            navCtrl.push('CoreUserProfilePage', { userId: this.userId });
+        }
+    };
+    /**
+     * Change the favourite state of the current conversation.
+     *
+     * @param {Function} [done] Function to call when done.
+     */
+    AddonMessagesDiscussionPage.prototype.changeFavourite = function (done) {
+        var _this = this;
+        this.favouriteIcon = 'spinner';
+        this.messagesProvider.setFavouriteConversation(this.conversation.id, !this.conversation.isfavourite).then(function () {
+            _this.conversation.isfavourite = !_this.conversation.isfavourite;
+            // Get the conversation data so it's cached. Don't block the user for this.
+            _this.messagesProvider.getConversation(_this.conversation.id, undefined, true);
+            _this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_5__providers_messages__["a" /* AddonMessagesProvider */].UPDATE_CONVERSATION_LIST_EVENT, {
+                conversationId: _this.conversation.id,
+                action: 'favourite',
+                value: _this.conversation.isfavourite
+            }, _this.siteId);
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'Error changing favourite state.');
+        }).finally(function () {
+            _this.favouriteIcon = 'fa-star';
+            _this.favouriteIconSlash = _this.conversation.isfavourite;
+            done && done();
+        });
+    };
+    /**
+     * Change the mute state of the current conversation.
+     *
+     * @param {Function} [done] Function to call when done.
+     */
+    AddonMessagesDiscussionPage.prototype.changeMute = function (done) {
+        var _this = this;
+        this.muteIcon = 'spinner';
+        this.messagesProvider.muteConversation(this.conversation.id, !this.conversation.ismuted).then(function () {
+            _this.conversation.ismuted = !_this.conversation.ismuted;
+            // Get the conversation data so it's cached. Don't block the user for this.
+            _this.messagesProvider.getConversation(_this.conversation.id, undefined, true);
+            _this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_5__providers_messages__["a" /* AddonMessagesProvider */].UPDATE_CONVERSATION_LIST_EVENT, {
+                conversationId: _this.conversation.id,
+                action: 'mute',
+                value: _this.conversation.ismuted
+            }, _this.siteId);
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'Error changing muted state.');
+        }).finally(function () {
+            _this.muteIcon = _this.conversation.ismuted ? 'volume-up' : 'volume-off';
+            done && done();
+        });
+    };
+    /**
+     * Calculate whether there are pending contact requests.
+     */
+    AddonMessagesDiscussionPage.prototype.setContactRequestInfo = function () {
+        var _this = this;
+        this.requestContactSent = false;
+        this.requestContactReceived = false;
+        if (this.otherMember && !this.otherMember.iscontact) {
+            this.requestContactSent = this.otherMember.contactrequests.some(function (request) {
+                return request.userid == _this.currentUserId && request.requesteduserid == _this.otherMember.id;
+            });
+            this.requestContactReceived = this.otherMember.contactrequests.some(function (request) {
+                return request.userid == _this.otherMember.id && request.requesteduserid == _this.currentUserId;
+            });
+        }
+    };
+    /**
+     * Calculate what to display in the footer.
+     */
+    AddonMessagesDiscussionPage.prototype.setFooterType = function () {
+        if (!this.otherMember) {
+            // Group conversation or group messaging not available.
+            this.footerType = 'message';
+        }
+        else if (this.otherMember.isblocked) {
+            this.footerType = 'blocked';
+        }
+        else if (this.requestContactReceived) {
+            this.footerType = 'requestReceived';
+        }
+        else if (this.otherMember.canmessage) {
+            this.footerType = 'message';
+        }
+        else if (this.requestContactSent) {
+            this.footerType = 'requestSent';
+        }
+        else if (this.otherMember.requirescontact) {
+            this.footerType = 'requiresContact';
+        }
+        else {
+            this.footerType = 'unable';
+        }
+    };
+    /**
+     * Displays a confirmation modal to block the user of the individual conversation.
+     *
+     * @return {Promise<any>} Promise resolved when user is blocked or dialog is cancelled.
+     */
+    AddonMessagesDiscussionPage.prototype.blockUser = function () {
+        var _this = this;
+        if (!this.otherMember) {
+            // Should never happen.
+            return Promise.reject(null);
+        }
+        var template = this.translate.instant('addon.messages.blockuserconfirm', { $a: this.otherMember.fullname });
+        var okText = this.translate.instant('addon.messages.blockuser');
+        return this.domUtils.showConfirm(template, undefined, okText).then(function () {
+            _this.blockIcon = 'spinner';
+            var modal = _this.domUtils.showModalLoading('core.sending', true);
+            _this.showLoadingModal = true;
+            return _this.messagesProvider.blockContact(_this.otherMember.id).finally(function () {
+                modal.dismiss();
+                _this.showLoadingModal = false;
+            });
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'core.error', true);
+        }).finally(function () {
+            _this.blockIcon = _this.otherMember.isblocked ? 'close-circle' : 'checkmark-circle';
+        });
+    };
+    /**
+     * Delete the conversation.
+     *
+     * @param {Function} [done] Function to call when done.
+     */
+    AddonMessagesDiscussionPage.prototype.deleteConversation = function (done) {
+        var _this = this;
+        var confirmMessage = 'addon.messages.' + (this.isSelf ? 'deleteallselfconfirm' : 'deleteallconfirm');
+        this.domUtils.showConfirm(this.translate.instant(confirmMessage)).then(function () {
+            _this.deleteIcon = 'spinner';
+            return _this.messagesProvider.deleteConversation(_this.conversation.id).then(function () {
+                _this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_5__providers_messages__["a" /* AddonMessagesProvider */].UPDATE_CONVERSATION_LIST_EVENT, {
+                    conversationId: _this.conversation.id,
+                    action: 'delete'
+                }, _this.siteId);
+                _this.messages = [];
+            }).finally(function () {
+                _this.deleteIcon = 'trash';
+                done && done();
+            });
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'Error deleting conversation.');
+        });
+    };
+    /**
+     * Displays a confirmation modal to unblock the user of the individual conversation.
+     *
+     * @return {Promise<any>} Promise resolved when user is unblocked or dialog is cancelled.
+     */
+    AddonMessagesDiscussionPage.prototype.unblockUser = function () {
+        var _this = this;
+        if (!this.otherMember) {
+            // Should never happen.
+            return Promise.reject(null);
+        }
+        var template = this.translate.instant('addon.messages.unblockuserconfirm', { $a: this.otherMember.fullname });
+        var okText = this.translate.instant('addon.messages.unblockuser');
+        return this.domUtils.showConfirm(template, undefined, okText).then(function () {
+            _this.blockIcon = 'spinner';
+            var modal = _this.domUtils.showModalLoading('core.sending', true);
+            _this.showLoadingModal = true;
+            return _this.messagesProvider.unblockContact(_this.otherMember.id).finally(function () {
+                modal.dismiss();
+                _this.showLoadingModal = false;
+            });
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'core.error', true);
+        }).finally(function () {
+            _this.blockIcon = _this.otherMember.isblocked ? 'close-circle' : 'checkmark-circle';
+        });
+    };
+    /**
+     * Displays a confirmation modal to send a contact request to the other user of the individual conversation.
+     *
+     * @return {Promise<any>} Promise resolved when the request is sent or the dialog is cancelled.
+     */
+    AddonMessagesDiscussionPage.prototype.createContactRequest = function () {
+        var _this = this;
+        if (!this.otherMember) {
+            // Should never happen.
+            return Promise.reject(null);
+        }
+        var template = this.translate.instant('addon.messages.addcontactconfirm', { $a: this.otherMember.fullname });
+        var okText = this.translate.instant('core.add');
+        return this.domUtils.showConfirm(template, undefined, okText).then(function () {
+            _this.addRemoveIcon = 'spinner';
+            var modal = _this.domUtils.showModalLoading('core.sending', true);
+            _this.showLoadingModal = true;
+            return _this.messagesProvider.createContactRequest(_this.otherMember.id).finally(function () {
+                modal.dismiss();
+                _this.showLoadingModal = false;
+            });
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'core.error', true);
+        }).finally(function () {
+            _this.addRemoveIcon = 'person';
+        });
+    };
+    /**
+     * Confirms the contact request of the other user of the individual conversation.
+     *
+     * @return {Promise<any>} Promise resolved when the request is confirmed.
+     */
+    AddonMessagesDiscussionPage.prototype.confirmContactRequest = function () {
+        var _this = this;
+        if (!this.otherMember) {
+            // Should never happen.
+            return Promise.reject(null);
+        }
+        var modal = this.domUtils.showModalLoading('core.sending', true);
+        this.showLoadingModal = true;
+        return this.messagesProvider.confirmContactRequest(this.otherMember.id).finally(function () {
+            modal.dismiss();
+            _this.showLoadingModal = false;
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'core.error', true);
+        });
+    };
+    /**
+     * Declines the contact request of the other user of the individual conversation.
+     *
+     * @return {Promise<any>} Promise resolved when the request is confirmed.
+     */
+    AddonMessagesDiscussionPage.prototype.declineContactRequest = function () {
+        var _this = this;
+        if (!this.otherMember) {
+            // Should never happen.
+            return Promise.reject(null);
+        }
+        var modal = this.domUtils.showModalLoading('core.sending', true);
+        this.showLoadingModal = true;
+        return this.messagesProvider.declineContactRequest(this.otherMember.id).finally(function () {
+            modal.dismiss();
+            _this.showLoadingModal = false;
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'core.error', true);
+        });
+    };
+    /**
+     * Displays a confirmation modal to remove the other user of the conversation from contacts.
+     *
+     * @return {Promise<any>} Promise resolved when the request is sent or the dialog is cancelled.
+     */
+    AddonMessagesDiscussionPage.prototype.removeContact = function () {
+        var _this = this;
+        if (!this.otherMember) {
+            // Should never happen.
+            return Promise.reject(null);
+        }
+        var template = this.translate.instant('addon.messages.removecontactconfirm', { $a: this.otherMember.fullname });
+        var okText = this.translate.instant('core.remove');
+        return this.domUtils.showConfirm(template, undefined, okText).then(function () {
+            _this.addRemoveIcon = 'spinner';
+            var modal = _this.domUtils.showModalLoading('core.sending', true);
+            _this.showLoadingModal = true;
+            return _this.messagesProvider.removeContact(_this.otherMember.id).finally(function () {
+                modal.dismiss();
+                _this.showLoadingModal = false;
+            });
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'core.error', true);
+        }).finally(function () {
+            _this.addRemoveIcon = 'person';
+        });
+    };
+    /**
+     * Page destroyed.
+     */
+    AddonMessagesDiscussionPage.prototype.ngOnDestroy = function () {
+        // Unset again, just in case.
+        this.unsetPolling();
+        this.syncObserver && this.syncObserver.off();
+        this.keyboardObserver && this.keyboardObserver.off();
+        this.memberInfoObserver && this.memberInfoObserver.off();
+        this.viewDestroyed = true;
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Content */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Content */])
+    ], AddonMessagesDiscussionPage.prototype, "content", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_16__components_infinite_loading_infinite_loading__["a" /* CoreInfiniteLoadingComponent */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_16__components_infinite_loading_infinite_loading__["a" /* CoreInfiniteLoadingComponent */])
+    ], AddonMessagesDiscussionPage.prototype, "infinite", void 0);
+    AddonMessagesDiscussionPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-addon-messages-discussion',template:/*ion-inline-start:"/Users/user/Documents/GitHub/moodlemobile2/src/addon/messages/pages/discussion/discussion.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>\n            <img *ngIf="loaded && !otherMember && conversationImage" class="core-bar-button-image" [src]="conversationImage" [alt]="title" onError="this.src=\'assets/img/group-avatar.png\'" core-external-content role="presentation" [siteId]="siteId || null">\n            <ion-avatar *ngIf="loaded && otherMember" class="core-bar-button-image" core-user-avatar [user]="otherMember" [linkProfile]="false" [checkOnline]="otherMember.showonlinestatus" item-start (click)="showInfo && viewInfo()"></ion-avatar>\n            <core-format-text [text]="title" (click)="showInfo && !isGroup && viewInfo()"></core-format-text>\n            <core-icon *ngIf="conversation && conversation.isfavourite" name="fa-star" [label]="\'core.favourites\' | translate"></core-icon>\n            <core-icon *ngIf="conversation && conversation.ismuted" name="volume-off" [label]="\'addon.messages.mutedconversation\' | translate"></core-icon>\n        </ion-title>\n        <ion-buttons end></ion-buttons>\n    </ion-navbar>\n    <core-navbar-buttons end>\n        <core-context-menu [aria-label]="\'addon.messages.conversationactions\' | translate">\n            <core-context-menu-item [hidden]="isSelf || !showInfo || isGroup" [priority]="1000" [content]="\'addon.messages.info\' | translate" (action)="viewInfo()" iconAction="information-circle"></core-context-menu-item>\n            <core-context-menu-item [hidden]="isSelf || !showInfo || !isGroup" [priority]="1000" [content]="\'addon.messages.groupinfo\' | translate" (action)="viewInfo()" iconAction="information-circle"></core-context-menu-item>\n            <core-context-menu-item [hidden]="!groupMessagingEnabled || !conversation" [priority]="800" [content]="(conversation && conversation.isfavourite ? \'addon.messages.removefromfavourites\' : \'addon.messages.addtofavourites\') | translate" (action)="changeFavourite($event)" [closeOnClick]="false" [iconAction]="favouriteIcon" [iconSlash]="favouriteIconSlash"></core-context-menu-item>\n            <core-context-menu-item [hidden]="isSelf || !otherMember || otherMember.isblocked" [priority]="700" [content]="\'addon.messages.blockuser\' | translate" (action)="blockUser()" [iconAction]="blockIcon"></core-context-menu-item>\n            <core-context-menu-item [hidden]="isSelf || !otherMember || !otherMember.isblocked" [priority]="700" [content]="\'addon.messages.unblockuser\' | translate" (action)="unblockUser()" [iconAction]="blockIcon"></core-context-menu-item>\n            <core-context-menu-item [hidden]="isSelf || !muteEnabled || !conversation" [priority]="600" [content]="(conversation && conversation.ismuted ? \'addon.messages.unmuteconversation\' : \'addon.messages.muteconversation\') | translate" (action)="changeMute($event)" [closeOnClick]="false" [iconAction]="muteIcon"></core-context-menu-item>\n            <core-context-menu-item [hidden]="!canDelete || !messages || !messages.length" [priority]="400" [content]="\'addon.messages.showdeletemessages\' | translate" (action)="toggleDelete()" [iconAction]="(showDelete ? \'checkbox-outline\' : \'square-outline\')"></core-context-menu-item>\n            <core-context-menu-item [hidden]="!groupMessagingEnabled || !conversationId || isGroup || !messages || !messages.length" [priority]="200" [content]="\'addon.messages.deleteconversation\' | translate" (action)="deleteConversation($event)" [closeOnClick]="false" [iconAction]="deleteIcon"></core-context-menu-item>\n            <core-context-menu-item [hidden]="isSelf || !otherMember || otherMember.iscontact || requestContactSent || requestContactReceived" [priority]="100" [content]="\'addon.messages.addtoyourcontacts\' | translate" (action)="createContactRequest()" [iconAction]="addRemoveIcon"></core-context-menu-item>\n            <core-context-menu-item [hidden]="isSelf || !otherMember || !otherMember.iscontact" [priority]="100" [content]="\'addon.messages.removefromyourcontacts\' | translate" (action)="removeContact()" [iconAction]="addRemoveIcon" [iconSlash]="true"></core-context-menu-item>\n        </core-context-menu>\n    </core-navbar-buttons>\n</ion-header>\n<ion-content class="has-footer">\n    <core-loading [hideUntil]="loaded">\n        <!-- Load previous messages. -->\n        <core-infinite-loading [enabled]="canLoadMore" (action)="loadPrevious($event)" position="top" [error]="loadMoreError"></core-infinite-loading>\n\n        <ng-container *ngIf="isSelf && !canLoadMore">\n            <p text-center>{{ \'addon.messages.selfconversation\' | translate }}</p>\n            <p text-center><i>{{ \'addon.messages.selfconversationdefaultmessage\' | translate }}</i></p>\n        </ng-container>\n\n        <ion-list class="addon-messages-discussion-container safe-area-page" [class.addon-messages-discussion-group]="isGroup" [attr.aria-live]="\'polite\'">\n            <ng-container *ngFor="let message of messages; index as index; last as last">\n                <h6 text-center *ngIf="message.showDate" class="addon-messages-date">\n                    {{ message.timecreated | coreFormatDate: "strftimedayshort" }}\n                </h6>\n\n                <ion-chip class="addon-messages-unreadfrom" *ngIf="unreadMessageFrom && message.id == unreadMessageFrom" color="light">\n                    <ion-label>{{ \'addon.messages.newmessages\' | translate:{$a: title} }}</ion-label>\n                    <ion-icon name="arrow-round-down"></ion-icon>\n                </ion-chip>\n\n                <ion-item text-wrap (longPress)="copyMessage(message)" class="addon-message" [class.addon-message-mine]="message.useridfrom == currentUserId" [class.addon-message-not-mine]="message.useridfrom != currentUserId" [class.addon-message-no-user]="!message.showUserData" [@coreSlideInOut]="message.useridfrom == currentUserId ? \'\' : \'fromLeft\'">\n                    <!-- User data. -->\n                    <h2 class="addon-message-user">\n                        <ion-avatar item-start core-user-avatar [user]="members[message.useridfrom]" [linkProfile]="false" *ngIf="message.showUserData"></ion-avatar>\n\n                        <div *ngIf="message.showUserData">{{ members[message.useridfrom].fullname }}</div>\n\n                        <ion-note *ngIf="!message.pending">{{ message.timecreated | coreFormatDate: "strftimetime" }}</ion-note>\n                        <ion-note *ngIf="message.pending"><ion-icon name="time"></ion-icon></ion-note>\n                    </h2>\n\n                    <!-- Some messages have <p> and some others don\'t. Add a <p> so they all have same styles. -->\n                    <p class="addon-message-text">\n                        <core-format-text (afterRender)="last && scrollToBottom()" [text]="message.text"></core-format-text>\n                    </p>\n\n                    <button ion-button icon-only clear="true" *ngIf="!message.sending && showDelete" (click)="deleteMessage(message, index)" class="addon-messages-delete-button" [@coreSlideInOut]="\'fromRight\'" [attr.aria-label]=" \'addon.messages.deletemessage\' | translate">\n                        <ion-icon name="trash" color="danger"></ion-icon>\n                    </button>\n                    <div class="tail" *ngIf="message.showTail"></div>\n                </ion-item>\n            </ng-container>\n        </ion-list>\n        <core-empty-box *ngIf="!messages || messages.length <= 0" icon="chatbubbles" [message]="\'addon.messages.nomessagesfound\' | translate"></core-empty-box>\n    </core-loading>\n</ion-content>\n<ion-footer color="light" class="footer-adjustable" *ngIf="loaded && (!conversationId || conversation)">\n    <ion-toolbar color="light" position="bottom">\n        <p *ngIf="footerType == \'unable\'" text-center margin-horizontal>{{ \'addon.messages.unabletomessage\' | translate }}</p>\n        <div *ngIf="footerType == \'blocked\'" padding-horizontal>\n            <p text-center>{{ \'addon.messages.youhaveblockeduser\' | translate }}</p>\n            <button ion-button block text-wrap margin-bottom (click)="unblockUser()">{{ \'addon.messages.unblockuser\' | translate }}</button>\n        </div>\n        <div *ngIf="footerType == \'requiresContact\'" padding-horizontal>\n            <p text-center><strong>{{ \'addon.messages.isnotinyourcontacts\' | translate: {$a: otherMember.fullname} }}</strong></p>\n            <p text-center>{{ \'addon.messages.requirecontacttomessage\' | translate: {$a: otherMember.fullname} }}</p>\n            <button ion-button block text-wrap margin-bottom (click)="createContactRequest()">{{ \'addon.messages.sendcontactrequest\' | translate }}</button>\n        </div>\n        <div *ngIf="footerType == \'requestReceived\'" padding-horizontal>\n            <p text-center>{{ \'addon.messages.userwouldliketocontactyou\' | translate: {$a: otherMember.fullname} }}</p>\n            <button ion-button block text-wrap margin-bottom (click)="confirmContactRequest()">{{ \'addon.messages.acceptandaddcontact\' | translate }}</button>\n            <button ion-button block text-wrap margin-bottom color="light" (click)="declineContactRequest()">{{ \'addon.messages.decline\' | translate }}</button>\n        </div>\n        <div *ngIf="footerType == \'requestSent\' || (footerType == \'message\' && requestContactSent)" padding-horizontal>\n            <p text-center><strong>{{ \'addon.messages.contactrequestsent\' | translate }}</strong></p>\n            <p text-center>{{ \'addon.messages.yourcontactrequestpending\' | translate: {$a: otherMember.fullname} }}</p>\n        </div>\n        <core-send-message-form *ngIf="footerType == \'message\'" (onSubmit)="sendMessage($event)" [showKeyboard]="showKeyboard" [placeholder]="\'addon.messages.newmessage\' | translate" (onResize)="resizeContent()"></core-send-message-form>\n    </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/user/Documents/GitHub/moodlemobile2/src/addon/messages/pages/discussion/discussion.html"*/,
+            animations: [__WEBPACK_IMPORTED_MODULE_14__classes_animations__["b" /* coreSlideInOut */]]
+        }),
+        __param(12, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Optional */])()),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__providers_events__["a" /* CoreEventsProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_sites__["a" /* CoreSitesProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_8__core_user_providers_user__["a" /* CoreUserProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* NavController */], __WEBPACK_IMPORTED_MODULE_7__providers_sync__["a" /* AddonMessagesSyncProvider */],
+            __WEBPACK_IMPORTED_MODULE_9__providers_utils_dom__["a" /* CoreDomUtilsProvider */], __WEBPACK_IMPORTED_MODULE_5__providers_messages__["a" /* AddonMessagesProvider */], __WEBPACK_IMPORTED_MODULE_12__providers_logger__["a" /* CoreLoggerProvider */],
+            __WEBPACK_IMPORTED_MODULE_10__providers_utils_utils__["a" /* CoreUtilsProvider */], __WEBPACK_IMPORTED_MODULE_13__providers_app__["a" /* CoreAppProvider */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */],
+            __WEBPACK_IMPORTED_MODULE_15__components_split_view_split_view__["a" /* CoreSplitViewComponent */], __WEBPACK_IMPORTED_MODULE_6__providers_messages_offline__["a" /* AddonMessagesOfflineProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ModalController */], __WEBPACK_IMPORTED_MODULE_11__providers_utils_text__["a" /* CoreTextUtilsProvider */]])
+    ], AddonMessagesDiscussionPage);
+    return AddonMessagesDiscussionPage;
 }());
 
-//# sourceMappingURL=submission-list.module.js.map
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
-var action_sheet_component_ngfactory = __webpack_require__(1471);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
-var alert_component_ngfactory = __webpack_require__(1472);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
-var app_root_ngfactory = __webpack_require__(1473);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js
-var loading_component_ngfactory = __webpack_require__(1474);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
-var modal_component_ngfactory = __webpack_require__(1475);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
-var picker_component_ngfactory = __webpack_require__(1476);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
-var popover_component_ngfactory = __webpack_require__(1477);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js
-var select_popover_component_ngfactory = __webpack_require__(1478);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
-var toast_component_ngfactory = __webpack_require__(1479);
-
-// EXTERNAL MODULE: ./src/components/context-menu/context-menu-popover.ngfactory.js
-var context_menu_popover_ngfactory = __webpack_require__(1480);
-
-// EXTERNAL MODULE: ./src/components/course-picker-menu/course-picker-menu-popover.ngfactory.js
-var course_picker_menu_popover_ngfactory = __webpack_require__(1481);
-
-// EXTERNAL MODULE: ./src/components/recaptcha/recaptchamodal.ngfactory.js
-var recaptchamodal_ngfactory = __webpack_require__(1482);
-
-// EXTERNAL MODULE: ./src/components/bs-tooltip/bs-tooltip.ngfactory.js
-var bs_tooltip_ngfactory = __webpack_require__(1483);
-
-// EXTERNAL MODULE: ./src/components/empty-box/empty-box.ngfactory.js
-var empty_box_ngfactory = __webpack_require__(121);
-
-// EXTERNAL MODULE: ./src/components/empty-box/empty-box.ts
-var empty_box = __webpack_require__(110);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.pipe.js
-var translate_pipe = __webpack_require__(27);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.service.js
-var translate_service = __webpack_require__(18);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/label/label.js
-var label = __webpack_require__(63);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
-var config = __webpack_require__(7);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/option/option.js
-var option_option = __webpack_require__(102);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js + 1 modules
-var item_ngfactory = __webpack_require__(30);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
-var item = __webpack_require__(21);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
-var util_form = __webpack_require__(20);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
-var item_reorder = __webpack_require__(28);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-content.js
-var item_content = __webpack_require__(32);
-
-// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
-var common = __webpack_require__(8);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select.ngfactory.js
-var select_ngfactory = __webpack_require__(120);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select.js
-var select_select = __webpack_require__(103);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app.js + 3 modules
-var app = __webpack_require__(34);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/deep-linker.js
-var deep_linker = __webpack_require__(55);
-
-// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(22);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/badge/badge.js
-var badge = __webpack_require__(142);
-
-// EXTERNAL MODULE: ./src/components/user-avatar/user-avatar.ngfactory.js
-var user_avatar_ngfactory = __webpack_require__(211);
-
-// EXTERNAL MODULE: ./src/components/user-avatar/user-avatar.ts
-var user_avatar = __webpack_require__(179);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller.js
-var nav_controller = __webpack_require__(19);
-
-// EXTERNAL MODULE: ./src/providers/utils/utils.ts
-var utils = __webpack_require__(2);
-
-// EXTERNAL MODULE: ./src/providers/app.ts
-var providers_app = __webpack_require__(9);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/avatar/avatar.js
-var avatar = __webpack_require__(152);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/icon/icon.js
-var icon = __webpack_require__(46);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
-var toolbar_header = __webpack_require__(365);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
-var view_controller = __webpack_require__(38);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.ngfactory.js
-var navbar_ngfactory = __webpack_require__(713);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
-var navbar = __webpack_require__(209);
-
-// EXTERNAL MODULE: ./src/directives/back-button.ts
-var back_button = __webpack_require__(471);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
-var platform = __webpack_require__(16);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js
-var toolbar_title_ngfactory = __webpack_require__(714);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
-var toolbar_title = __webpack_require__(307);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
-var toolbar = __webpack_require__(245);
-
-// EXTERNAL MODULE: ./src/directives/format-text.ts
-var format_text = __webpack_require__(41);
-
-// EXTERNAL MODULE: ./src/providers/utils/text.ts
-var utils_text = __webpack_require__(10);
-
-// EXTERNAL MODULE: ./src/providers/utils/url.ts
-var url = __webpack_require__(23);
-
-// EXTERNAL MODULE: ./src/providers/logger.ts
-var logger = __webpack_require__(5);
-
-// EXTERNAL MODULE: ./src/providers/filepool.ts
-var filepool = __webpack_require__(17);
-
-// EXTERNAL MODULE: ./src/core/contentlinks/providers/helper.ts
-var providers_helper = __webpack_require__(13);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
-var content = __webpack_require__(26);
-
-// EXTERNAL MODULE: ./src/providers/utils/iframe.ts
-var iframe = __webpack_require__(37);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-item.js
-var toolbar_item = __webpack_require__(366);
-
-// EXTERNAL MODULE: ./src/components/split-view/split-view.ngfactory.js
-var split_view_ngfactory = __webpack_require__(472);
-
-// EXTERNAL MODULE: ./src/core/fileuploader/providers/fileuploader.ts
-var fileuploader = __webpack_require__(68);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
-var content_ngfactory = __webpack_require__(178);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
-var dom_controller = __webpack_require__(33);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
-var keyboard = __webpack_require__(101);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher.js
-var refresher = __webpack_require__(151);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-controller.js
-var gesture_controller = __webpack_require__(39);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.ngfactory.js
-var refresher_content_ngfactory = __webpack_require__(210);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.js
-var refresher_content = __webpack_require__(168);
-
-// EXTERNAL MODULE: ./src/components/loading/loading.ngfactory.js
-var loading_ngfactory = __webpack_require__(50);
-
-// EXTERNAL MODULE: ./src/components/loading/loading.ts
-var loading = __webpack_require__(47);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list.js + 1 modules
-var list = __webpack_require__(82);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
-var nav_params = __webpack_require__(71);
-
-// CONCATENATED MODULE: ./src/addon/mod/assign/pages/submission-list/submission-list.ngfactory.js
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var styles_AddonModAssignSubmissionListPage = [];
-var RenderType_AddonModAssignSubmissionListPage = core["_29" /* ɵcrt */]({ encapsulation: 2, styles: styles_AddonModAssignSubmissionListPage, data: {} });
-
-function View_AddonModAssignSubmissionListPage_1(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 3, "core-empty-box", [["icon", "paper"]], null, null, null, empty_box_ngfactory["b" /* View_CoreEmptyBoxComponent_0 */], empty_box_ngfactory["a" /* RenderType_CoreEmptyBoxComponent */])), core["_30" /* ɵdid */](1, 49152, null, 0, empty_box["a" /* CoreEmptyBoxComponent */], [], { message: [0, "message"], icon: [1, "icon"] }, null), core["_47" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_55" /* ɵted */](-1, 0, ["\n            "]))], function (_ck, _v) { var currVal_0 = core["_56" /* ɵunv */](_v, 1, 0, core["_44" /* ɵnov */](_v, 2).transform("addon.mod_assign.submissionstatus_")); var currVal_1 = "paper"; _ck(_v, 1, 0, currVal_0, currVal_1); }, null); }
-function View_AddonModAssignSubmissionListPage_3(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 3, "ion-label", [["id", "addon-assign-groupslabel"]], null, null, null, null, null)), core["_30" /* ɵdid */](1, 16384, [[3, 4]], 0, label["a" /* Label */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], [8, null], [8, null], [8, null], [8, null]], { id: [0, "id"] }, null), (_l()(), core["_55" /* ɵted */](2, null, ["", ""])), core["_47" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], function (_ck, _v) { var currVal_0 = "addon-assign-groupslabel"; _ck(_v, 1, 0, currVal_0); }, function (_ck, _v) { var currVal_1 = core["_56" /* ɵunv */](_v, 2, 0, core["_44" /* ɵnov */](_v, 3).transform("core.groupsseparate")); _ck(_v, 2, 0, currVal_1); }); }
-function View_AddonModAssignSubmissionListPage_4(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 3, "ion-label", [["id", "addon-assign-groupslabel"]], null, null, null, null, null)), core["_30" /* ɵdid */](1, 16384, [[3, 4]], 0, label["a" /* Label */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], [8, null], [8, null], [8, null], [8, null]], { id: [0, "id"] }, null), (_l()(), core["_55" /* ɵted */](2, null, ["", ""])), core["_47" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], function (_ck, _v) { var currVal_0 = "addon-assign-groupslabel"; _ck(_v, 1, 0, currVal_0); }, function (_ck, _v) { var currVal_1 = core["_56" /* ɵunv */](_v, 2, 0, core["_44" /* ɵnov */](_v, 3).transform("core.groupsvisible")); _ck(_v, 2, 0, currVal_1); }); }
-function View_AddonModAssignSubmissionListPage_5(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 2, "ion-option", [], null, null, null, null, null)), core["_30" /* ɵdid */](1, 16384, [[6, 4]], 0, option_option["a" /* Option */], [core["t" /* ElementRef */]], { value: [0, "value"] }, null), (_l()(), core["_55" /* ɵted */](2, null, ["", ""]))], function (_ck, _v) { var currVal_0 = _v.context.$implicit.id; _ck(_v, 1, 0, currVal_0); }, function (_ck, _v) { var currVal_1 = _v.context.$implicit.name; _ck(_v, 2, 0, currVal_1); }); }
-function View_AddonModAssignSubmissionListPage_2(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 24, "ion-item", [["class", "item item-block"], ["text-wrap", ""]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_30" /* ɵdid */](1, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_52" /* ɵqud */](603979776, 3, { contentLabel: 0 }), core["_52" /* ɵqud */](603979776, 4, { _buttons: 1 }), core["_52" /* ɵqud */](603979776, 5, { _icons: 1 }), core["_30" /* ɵdid */](5, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_55" /* ɵted */](-1, 2, ["\n                    "])), (_l()(), core["_26" /* ɵand */](16777216, null, 1, 1, null, View_AddonModAssignSubmissionListPage_3)), core["_30" /* ɵdid */](8, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, 2, ["\n                    "])), (_l()(), core["_26" /* ɵand */](16777216, null, 1, 1, null, View_AddonModAssignSubmissionListPage_4)), core["_30" /* ɵdid */](11, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, 2, ["\n                    "])), (_l()(), core["_31" /* ɵeld */](13, 0, null, 3, 10, "ion-select", [["aria-labelledby", "addon-assign-groupslabel"], ["interface", "action-sheet"]], [[2, "select-disabled", null], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "ionChange"], [null, "click"], [null, "keyup.space"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (core["_44" /* ɵnov */](_v, 14)._click($event) !== false);
-        ad = (pd_0 && ad);
-    } if (("keyup.space" === en)) {
-        var pd_1 = (core["_44" /* ɵnov */](_v, 14)._keyup() !== false);
-        ad = (pd_1 && ad);
-    } if (("ngModelChange" === en)) {
-        var pd_2 = ((_co.groupId = $event) !== false);
-        ad = (pd_2 && ad);
-    } if (("ionChange" === en)) {
-        var pd_3 = (_co.setGroup(_co.groupId) !== false);
-        ad = (pd_3 && ad);
-    } return ad; }, select_ngfactory["b" /* View_Select_0 */], select_ngfactory["a" /* RenderType_Select */])), core["_30" /* ɵdid */](14, 1228800, null, 1, select_select["a" /* Select */], [app["a" /* App */], util_form["a" /* Form */], config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], [2, item["a" /* Item */]], deep_linker["a" /* DeepLinker */]], { interface: [0, "interface"] }, { ionChange: "ionChange" }), core["_52" /* ɵqud */](603979776, 6, { options: 1 }), core["_50" /* ɵprd */](1024, null, esm5_forms["l" /* NG_VALUE_ACCESSOR */], function (p0_0) { return [p0_0]; }, [select_select["a" /* Select */]]), core["_30" /* ɵdid */](17, 671744, null, 0, esm5_forms["q" /* NgModel */], [[8, null], [8, null], [8, null], [2, esm5_forms["l" /* NG_VALUE_ACCESSOR */]]], { model: [0, "model"] }, { update: "ngModelChange" }), core["_50" /* ɵprd */](2048, null, esm5_forms["m" /* NgControl */], null, [esm5_forms["q" /* NgModel */]]), core["_30" /* ɵdid */](19, 16384, null, 0, esm5_forms["n" /* NgControlStatus */], [esm5_forms["m" /* NgControl */]], null, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n                        "])), (_l()(), core["_26" /* ɵand */](16777216, null, null, 1, null, View_AddonModAssignSubmissionListPage_5)), core["_30" /* ɵdid */](22, 802816, null, 0, common["j" /* NgForOf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */], core["E" /* IterableDiffers */]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n                    "])), (_l()(), core["_55" /* ɵted */](-1, 2, ["\n                "]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.groupInfo.separateGroups; _ck(_v, 8, 0, currVal_0); var currVal_1 = _co.groupInfo.visibleGroups; _ck(_v, 11, 0, currVal_1); var currVal_10 = "action-sheet"; _ck(_v, 14, 0, currVal_10); var currVal_11 = _co.groupId; _ck(_v, 17, 0, currVal_11); var currVal_12 = _co.groupInfo.groups; _ck(_v, 22, 0, currVal_12); }, function (_ck, _v) { var currVal_2 = core["_44" /* ɵnov */](_v, 14)._disabled; var currVal_3 = core["_44" /* ɵnov */](_v, 19).ngClassUntouched; var currVal_4 = core["_44" /* ɵnov */](_v, 19).ngClassTouched; var currVal_5 = core["_44" /* ɵnov */](_v, 19).ngClassPristine; var currVal_6 = core["_44" /* ɵnov */](_v, 19).ngClassDirty; var currVal_7 = core["_44" /* ɵnov */](_v, 19).ngClassValid; var currVal_8 = core["_44" /* ɵnov */](_v, 19).ngClassInvalid; var currVal_9 = core["_44" /* ɵnov */](_v, 19).ngClassPending; _ck(_v, 13, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9); }); }
-function View_AddonModAssignSubmissionListPage_7(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), core["_55" /* ɵted */](1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.userfullname; _ck(_v, 1, 0, currVal_0); }); }
-function View_AddonModAssignSubmissionListPage_8(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 2, "h2", [], null, null, null, null, null)), (_l()(), core["_55" /* ɵted */](1, null, ["", "", ""])), core["_47" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], null, function (_ck, _v) { var currVal_0 = core["_56" /* ɵunv */](_v, 1, 0, core["_44" /* ɵnov */](_v, 2).transform("addon.mod_assign.hiddenuser")); var currVal_1 = _v.parent.context.$implicit.blindid; _ck(_v, 1, 0, currVal_0, currVal_1); }); }
-function View_AddonModAssignSubmissionListPage_10(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), core["_55" /* ɵted */](1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.parent.parent.context.$implicit.groupname; _ck(_v, 1, 0, currVal_0); }); }
-function View_AddonModAssignSubmissionListPage_11(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 2, "span", [["class", "text-danger"]], null, null, null, null, null)), (_l()(), core["_55" /* ɵted */](1, null, ["", ""])), core["_47" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], null, function (_ck, _v) { var currVal_0 = core["_56" /* ɵunv */](_v, 1, 0, core["_44" /* ɵnov */](_v, 2).transform("addon.mod_assign.noteam")); _ck(_v, 1, 0, currVal_0); }); }
-function View_AddonModAssignSubmissionListPage_12(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 2, "span", [["class", "text-danger"]], null, null, null, null, null)), (_l()(), core["_55" /* ɵted */](1, null, ["", ""])), core["_47" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], null, function (_ck, _v) { var currVal_0 = core["_56" /* ɵunv */](_v, 1, 0, core["_44" /* ɵnov */](_v, 2).transform("addon.mod_assign.multipleteams")); _ck(_v, 1, 0, currVal_0); }); }
-function View_AddonModAssignSubmissionListPage_13(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 2, "span", [], null, null, null, null, null)), (_l()(), core["_55" /* ɵted */](1, null, ["", ""])), core["_47" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], null, function (_ck, _v) { var currVal_0 = core["_56" /* ɵunv */](_v, 1, 0, core["_44" /* ɵnov */](_v, 2).transform("addon.mod_assign.defaultteam")); _ck(_v, 1, 0, currVal_0); }); }
-function View_AddonModAssignSubmissionListPage_9(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 13, "p", [], null, null, null, null, null)), (_l()(), core["_55" /* ɵted */](-1, null, ["\n                            "])), (_l()(), core["_26" /* ɵand */](16777216, null, null, 1, null, View_AddonModAssignSubmissionListPage_10)), core["_30" /* ɵdid */](3, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n                            "])), (_l()(), core["_26" /* ɵand */](16777216, null, null, 1, null, View_AddonModAssignSubmissionListPage_11)), core["_30" /* ɵdid */](6, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n                            "])), (_l()(), core["_26" /* ɵand */](16777216, null, null, 1, null, View_AddonModAssignSubmissionListPage_12)), core["_30" /* ɵdid */](9, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n                            "])), (_l()(), core["_26" /* ɵand */](16777216, null, null, 1, null, View_AddonModAssignSubmissionListPage_13)), core["_30" /* ɵdid */](12, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n                        "]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = _v.parent.context.$implicit.groupname; _ck(_v, 3, 0, currVal_0); var currVal_1 = (((_co.assign.preventsubmissionnotingroup && !_v.parent.context.$implicit.groupname) && _v.parent.context.$implicit.noGroups) && !_v.parent.context.$implicit.blindid); _ck(_v, 6, 0, currVal_1); var currVal_2 = (((_co.assign.preventsubmissionnotingroup && !_v.parent.context.$implicit.groupname) && _v.parent.context.$implicit.manyGroups) && !_v.parent.context.$implicit.blindid); _ck(_v, 9, 0, currVal_2); var currVal_3 = (!_co.assign.preventsubmissionnotingroup && !_v.parent.context.$implicit.groupname); _ck(_v, 12, 0, currVal_3); }, null); }
-function View_AddonModAssignSubmissionListPage_14(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 2, "ion-badge", [["text-center", ""], ["text-wrap", ""]], null, null, null, null, null)), core["_30" /* ɵdid */](1, 16384, null, 0, badge["a" /* Badge */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */]], { color: [0, "color"] }, null), (_l()(), core["_55" /* ɵted */](2, null, ["\n                            ", "\n                        "]))], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.statusColor; _ck(_v, 1, 0, currVal_0); }, function (_ck, _v) { var currVal_1 = _v.parent.context.$implicit.statusTranslated; _ck(_v, 2, 0, currVal_1); }); }
-function View_AddonModAssignSubmissionListPage_15(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 3, "ion-badge", [["text-center", ""], ["text-wrap", ""]], null, null, null, null, null)), core["_30" /* ɵdid */](1, 16384, null, 0, badge["a" /* Badge */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */]], { color: [0, "color"] }, null), (_l()(), core["_55" /* ɵted */](2, null, ["\n                            ", "\n                        "])), core["_47" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.gradingColor; _ck(_v, 1, 0, currVal_0); }, function (_ck, _v) { var currVal_1 = core["_56" /* ɵunv */](_v, 2, 0, core["_44" /* ɵnov */](_v, 3).transform(_v.parent.context.$implicit.gradingStatusTranslationId)); _ck(_v, 2, 0, currVal_1); }); }
-function View_AddonModAssignSubmissionListPage_6(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 28, null, null, null, null, null, null, null)), (_l()(), core["_55" /* ɵted */](-1, null, ["\n                    "])), (_l()(), core["_31" /* ɵeld */](2, 0, null, null, 25, "a", [["class", "item item-block"], ["ion-item", ""], ["text-wrap", ""]], [[2, "core-split-item-selected", null]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (_co.loadSubmission(_v.context.$implicit) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_30" /* ɵdid */](3, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_52" /* ɵqud */](335544320, 7, { contentLabel: 0 }), core["_52" /* ɵqud */](603979776, 8, { _buttons: 1 }), core["_52" /* ɵqud */](603979776, 9, { _icons: 1 }), core["_30" /* ɵdid */](7, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_55" /* ɵted */](-1, 2, ["\n                        "])), (_l()(), core["_31" /* ɵeld */](9, 0, null, 0, 2, "ion-avatar", [["core-user-avatar", ""], ["item-start", ""]], null, null, null, user_avatar_ngfactory["b" /* View_CoreUserAvatarComponent_0 */], user_avatar_ngfactory["a" /* RenderType_CoreUserAvatarComponent */])), core["_30" /* ɵdid */](10, 770048, null, 0, user_avatar["a" /* CoreUserAvatarComponent */], [nav_controller["a" /* NavController */], sites["a" /* CoreSitesProvider */], utils["a" /* CoreUtilsProvider */], providers_app["a" /* CoreAppProvider */], events["a" /* CoreEventsProvider */], [2, split_view["a" /* CoreSplitViewComponent */]]], { user: [0, "user"], linkProfile: [1, "linkProfile"] }, null), core["_30" /* ɵdid */](11, 16384, null, 0, avatar["a" /* Avatar */], [], null, null), (_l()(), core["_55" /* ɵted */](-1, 2, ["\n                        "])), (_l()(), core["_26" /* ɵand */](16777216, null, 2, 1, null, View_AddonModAssignSubmissionListPage_7)), core["_30" /* ɵdid */](14, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, 2, ["\n                        "])), (_l()(), core["_26" /* ɵand */](16777216, null, 2, 1, null, View_AddonModAssignSubmissionListPage_8)), core["_30" /* ɵdid */](17, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, 2, ["\n                        "])), (_l()(), core["_26" /* ɵand */](16777216, null, 2, 1, null, View_AddonModAssignSubmissionListPage_9)), core["_30" /* ɵdid */](20, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, 2, ["\n                        "])), (_l()(), core["_26" /* ɵand */](16777216, null, 2, 1, null, View_AddonModAssignSubmissionListPage_14)), core["_30" /* ɵdid */](23, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, 2, ["\n                        "])), (_l()(), core["_26" /* ɵand */](16777216, null, 2, 1, null, View_AddonModAssignSubmissionListPage_15)), core["_30" /* ɵdid */](26, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, 2, ["\n                    "])), (_l()(), core["_55" /* ɵted */](-1, null, ["\n                "]))], function (_ck, _v) { var _co = _v.component; var currVal_1 = _v.context.$implicit; var currVal_2 = false; _ck(_v, 10, 0, currVal_1, currVal_2); var currVal_3 = _v.context.$implicit.userfullname; _ck(_v, 14, 0, currVal_3); var currVal_4 = !_v.context.$implicit.userfullname; _ck(_v, 17, 0, currVal_4); var currVal_5 = _co.assign.teamsubmission; _ck(_v, 20, 0, currVal_5); var currVal_6 = _v.context.$implicit.statusTranslated; _ck(_v, 23, 0, currVal_6); var currVal_7 = _v.context.$implicit.gradingStatusTranslationId; _ck(_v, 26, 0, currVal_7); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = (_v.context.$implicit.submitid == _co.selectedSubmissionId); _ck(_v, 2, 0, currVal_0); }); }
-function View_AddonModAssignSubmissionListPage_16(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 10, "ion-item", [["class", "core-warning-card item item-block"], ["icon-start", ""], ["text-wrap", ""]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_30" /* ɵdid */](1, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_52" /* ɵqud */](335544320, 10, { contentLabel: 0 }), core["_52" /* ɵqud */](603979776, 11, { _buttons: 1 }), core["_52" /* ɵqud */](603979776, 12, { _icons: 1 }), core["_30" /* ɵdid */](5, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_55" /* ɵted */](-1, 2, ["\n                    "])), (_l()(), core["_31" /* ɵeld */](7, 0, null, 2, 1, "ion-icon", [["name", "warning"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_30" /* ɵdid */](8, 147456, [[12, 4]], 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */]], { name: [0, "name"] }, null), (_l()(), core["_55" /* ɵted */](9, 2, ["\n                    ", "\n                "])), core["_47" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], function (_ck, _v) { var currVal_1 = "warning"; _ck(_v, 8, 0, currVal_1); }, function (_ck, _v) { var currVal_0 = core["_44" /* ɵnov */](_v, 8)._hidden; _ck(_v, 7, 0, currVal_0); var currVal_2 = core["_56" /* ɵunv */](_v, 9, 0, core["_44" /* ɵnov */](_v, 10).transform("addon.mod_assign.notallparticipantsareshown")); _ck(_v, 9, 0, currVal_2); }); }
-function View_AddonModAssignSubmissionListPage_0(_l) { return core["_57" /* ɵvid */](0, [core["_52" /* ɵqud */](402653184, 1, { splitviewCtrl: 0 }), (_l()(), core["_31" /* ɵeld */](1, 0, null, null, 16, "ion-header", [], null, null, null, null, null)), core["_30" /* ɵdid */](2, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_31" /* ɵeld */](4, 0, null, null, 12, "ion-navbar", [["class", "toolbar"], ["core-back-button", ""]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, navbar_ngfactory["b" /* View_Navbar_0 */], navbar_ngfactory["a" /* RenderType_Navbar */])), core["_30" /* ɵdid */](5, 49152, null, 0, navbar["a" /* Navbar */], [app["a" /* App */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]], config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */]], null, null), core["_30" /* ɵdid */](6, 212992, null, 0, back_button["a" /* CoreBackButtonDirective */], [navbar["a" /* Navbar */], platform["a" /* Platform */], translate_service["a" /* TranslateService */], events["a" /* CoreEventsProvider */]], null, null), (_l()(), core["_55" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_31" /* ɵeld */](8, 0, null, 3, 3, "ion-title", [], null, null, null, toolbar_title_ngfactory["b" /* View_ToolbarTitle_0 */], toolbar_title_ngfactory["a" /* RenderType_ToolbarTitle */])), core["_30" /* ɵdid */](9, 49152, null, 0, toolbar_title["a" /* ToolbarTitle */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), (_l()(), core["_31" /* ɵeld */](10, 0, null, 0, 1, "core-format-text", [], null, null, null, null, null)), core["_30" /* ɵdid */](11, 540672, null, 0, format_text["a" /* CoreFormatTextDirective */], [core["t" /* ElementRef */], sites["a" /* CoreSitesProvider */], dom["a" /* CoreDomUtilsProvider */], utils_text["a" /* CoreTextUtilsProvider */], translate_service["a" /* TranslateService */], platform["a" /* Platform */], utils["a" /* CoreUtilsProvider */], url["a" /* CoreUrlUtilsProvider */], logger["a" /* CoreLoggerProvider */], filepool["a" /* CoreFilepoolProvider */], providers_app["a" /* CoreAppProvider */], providers_helper["a" /* CoreContentLinksHelperProvider */], [2, nav_controller["a" /* NavController */]], [2, content["a" /* Content */]], [2, split_view["a" /* CoreSplitViewComponent */]], iframe["a" /* CoreIframeUtilsProvider */], events["a" /* CoreEventsProvider */]], { text: [0, "text"] }, null), (_l()(), core["_55" /* ɵted */](-1, 3, ["\n\n        "])), (_l()(), core["_31" /* ɵeld */](13, 0, null, 2, 2, "ion-buttons", [["end", ""]], null, null, null, null, null)), core["_30" /* ɵdid */](14, 16384, null, 1, toolbar_item["a" /* ToolbarItem */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), core["_52" /* ɵqud */](603979776, 2, { _buttons: 1 }), (_l()(), core["_55" /* ɵted */](-1, 3, ["\n    "])), (_l()(), core["_55" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_55" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_31" /* ɵeld */](19, 0, null, null, 35, "core-split-view", [], null, null, null, split_view_ngfactory["b" /* View_CoreSplitViewComponent_0 */], split_view_ngfactory["a" /* RenderType_CoreSplitViewComponent */])), core["_30" /* ɵdid */](20, 245760, [[1, 4]], 0, split_view["a" /* CoreSplitViewComponent */], [[2, nav_controller["a" /* NavController */]], core["t" /* ElementRef */], fileuploader["a" /* CoreFileUploaderProvider */], platform["a" /* Platform */], translate_service["a" /* TranslateService */]], null, null), (_l()(), core["_55" /* ɵted */](-1, 0, ["\n    "])), (_l()(), core["_31" /* ɵeld */](22, 0, null, 0, 31, "ion-content", [], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_30" /* ɵdid */](23, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform["a" /* Platform */], dom_controller["a" /* DomController */], core["t" /* ElementRef */], core["V" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["M" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_55" /* ɵted */](-1, 1, ["\n        "])), (_l()(), core["_31" /* ɵeld */](25, 0, null, 2, 6, "ion-refresher", [], [[2, "refresher-active", null], [4, "top", null]], [[null, "ionRefresh"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("ionRefresh" === en)) {
-        var pd_0 = (_co.refreshList($event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), core["_30" /* ɵdid */](26, 212992, null, 0, refresher["a" /* Refresher */], [platform["a" /* Platform */], content["a" /* Content */], core["M" /* NgZone */], gesture_controller["l" /* GestureController */]], { enabled: [0, "enabled"] }, { ionRefresh: "ionRefresh" }), (_l()(), core["_55" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_31" /* ɵeld */](28, 0, null, null, 2, "ion-refresher-content", [], [[1, "state", 0]], null, null, refresher_content_ngfactory["b" /* View_RefresherContent_0 */], refresher_content_ngfactory["a" /* RenderType_RefresherContent */])), core["_30" /* ɵdid */](29, 114688, null, 0, refresher_content["a" /* RefresherContent */], [refresher["a" /* Refresher */], config["a" /* Config */]], { pullingText: [0, "pullingText"] }, null), core["_47" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_55" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_55" /* ɵted */](-1, 1, ["\n        "])), (_l()(), core["_31" /* ɵeld */](33, 0, null, 1, 19, "core-loading", [], null, null, null, loading_ngfactory["b" /* View_CoreLoadingComponent_0 */], loading_ngfactory["a" /* RenderType_CoreLoadingComponent */])), core["_30" /* ɵdid */](34, 638976, null, 0, loading["a" /* CoreLoadingComponent */], [translate_service["a" /* TranslateService */], core["t" /* ElementRef */], events["a" /* CoreEventsProvider */], utils["a" /* CoreUtilsProvider */]], { hideUntil: [0, "hideUntil"] }, null), (_l()(), core["_55" /* ɵted */](-1, 0, ["\n            "])), (_l()(), core["_26" /* ɵand */](16777216, null, 0, 1, null, View_AddonModAssignSubmissionListPage_1)), core["_30" /* ɵdid */](37, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, 0, ["\n\n            "])), (_l()(), core["_31" /* ɵeld */](39, 0, null, 0, 12, "ion-list", [], null, null, null, null, null)), core["_30" /* ɵdid */](40, 16384, null, 0, list["a" /* List */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], platform["a" /* Platform */], gesture_controller["l" /* GestureController */], dom_controller["a" /* DomController */]], null, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n                "])), (_l()(), core["_26" /* ɵand */](16777216, null, null, 1, null, View_AddonModAssignSubmissionListPage_2)), core["_30" /* ɵdid */](43, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n                "])), (_l()(), core["_55" /* ɵted */](-1, null, ["\n                "])), (_l()(), core["_26" /* ɵand */](16777216, null, null, 1, null, View_AddonModAssignSubmissionListPage_6)), core["_30" /* ɵdid */](47, 802816, null, 0, common["j" /* NgForOf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */], core["E" /* IterableDiffers */]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n\n                "])), (_l()(), core["_26" /* ɵand */](16777216, null, null, 1, null, View_AddonModAssignSubmissionListPage_16)), core["_30" /* ɵdid */](50, 16384, null, 0, common["k" /* NgIf */], [core["_11" /* ViewContainerRef */], core["_6" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_55" /* ɵted */](-1, 0, ["\n        "])), (_l()(), core["_55" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_55" /* ɵted */](-1, 0, ["\n"])), (_l()(), core["_55" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; _ck(_v, 6, 0); var currVal_2 = _co.title; _ck(_v, 11, 0, currVal_2); _ck(_v, 20, 0); var currVal_7 = _co.loaded; _ck(_v, 26, 0, currVal_7); var currVal_9 = core["_34" /* ɵinlineInterpolate */](1, "", core["_56" /* ɵunv */](_v, 29, 0, core["_44" /* ɵnov */](_v, 30).transform("core.pulltorefresh")), ""); _ck(_v, 29, 0, currVal_9); var currVal_10 = _co.loaded; _ck(_v, 34, 0, currVal_10); var currVal_11 = (!_co.submissions || (_co.submissions.length == 0)); _ck(_v, 37, 0, currVal_11); var currVal_12 = (_co.groupInfo.separateGroups || _co.groupInfo.visibleGroups); _ck(_v, 43, 0, currVal_12); var currVal_13 = _co.submissions; _ck(_v, 47, 0, currVal_13); var currVal_14 = !_co.haveAllParticipants; _ck(_v, 50, 0, currVal_14); }, function (_ck, _v) { var currVal_0 = core["_44" /* ɵnov */](_v, 5)._hidden; var currVal_1 = core["_44" /* ɵnov */](_v, 5)._sbPadding; _ck(_v, 4, 0, currVal_0, currVal_1); var currVal_3 = core["_44" /* ɵnov */](_v, 23).statusbarPadding; var currVal_4 = core["_44" /* ɵnov */](_v, 23)._hasRefresher; _ck(_v, 22, 0, currVal_3, currVal_4); var currVal_5 = (core["_44" /* ɵnov */](_v, 26).state !== "inactive"); var currVal_6 = core["_44" /* ɵnov */](_v, 26)._top; _ck(_v, 25, 0, currVal_5, currVal_6); var currVal_8 = core["_44" /* ɵnov */](_v, 29).r.state; _ck(_v, 28, 0, currVal_8); }); }
-function View_AddonModAssignSubmissionListPage_Host_0(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 1, "page-addon-mod-assign-submission-list", [], null, null, null, View_AddonModAssignSubmissionListPage_0, RenderType_AddonModAssignSubmissionListPage)), core["_30" /* ɵdid */](1, 245760, null, 0, submission_list_AddonModAssignSubmissionListPage, [nav_params["a" /* NavParams */], sites["a" /* CoreSitesProvider */], events["a" /* CoreEventsProvider */], dom["a" /* CoreDomUtilsProvider */], translate_service["a" /* TranslateService */], providers_assign["a" /* AddonModAssignProvider */], assign_offline["a" /* AddonModAssignOfflineProvider */], helper["a" /* AddonModAssignHelperProvider */], groups["a" /* CoreGroupsProvider */]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
-var AddonModAssignSubmissionListPageNgFactory = core["_27" /* ɵccf */]("page-addon-mod-assign-submission-list", submission_list_AddonModAssignSubmissionListPage, View_AddonModAssignSubmissionListPage_Host_0, {}, {}, []);
-
-//# sourceMappingURL=submission-list.ngfactory.js.map
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.loader.js
-var translate_loader = __webpack_require__(361);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.compiler.js
-var translate_compiler = __webpack_require__(362);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.parser.js
-var translate_parser = __webpack_require__(364);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/missing-translation-handler.js
-var missing_translation_handler = __webpack_require__(363);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.store.js
-var translate_store = __webpack_require__(470);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
-var ionic_angular_module = __webpack_require__(712);
-
-// EXTERNAL MODULE: ./src/pipes/pipes.module.ts + 2 modules
-var pipes_module = __webpack_require__(109);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
-var module_loader = __webpack_require__(268);
-
-// CONCATENATED MODULE: ./src/addon/mod/assign/pages/submission-list/submission-list.module.ngfactory.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModAssignSubmissionListPageModuleNgFactory", function() { return AddonModAssignSubmissionListPageModuleNgFactory; });
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var AddonModAssignSubmissionListPageModuleNgFactory = core["_28" /* ɵcmf */](submission_list_module_AddonModAssignSubmissionListPageModule, [], function (_l) { return core["_40" /* ɵmod */]([core["_41" /* ɵmpd */](512, core["o" /* ComponentFactoryResolver */], core["_21" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], context_menu_popover_ngfactory["a" /* CoreContextMenuPopoverComponentNgFactory */], course_picker_menu_popover_ngfactory["a" /* CoreCoursePickerMenuPopoverComponentNgFactory */], recaptchamodal_ngfactory["a" /* CoreRecaptchaModalComponentNgFactory */], bs_tooltip_ngfactory["a" /* CoreBSTooltipComponentNgFactory */], AddonModAssignSubmissionListPageNgFactory]], [3, core["o" /* ComponentFactoryResolver */]], core["K" /* NgModuleRef */]]), core["_41" /* ɵmpd */](4608, common["m" /* NgLocalization */], common["l" /* NgLocaleLocalization */], [core["G" /* LOCALE_ID */], [2, common["w" /* ɵa */]]]), core["_41" /* ɵmpd */](4608, esm5_forms["x" /* ɵi */], esm5_forms["x" /* ɵi */], []), core["_41" /* ɵmpd */](4608, esm5_forms["d" /* FormBuilder */], esm5_forms["d" /* FormBuilder */], []), core["_41" /* ɵmpd */](4608, translate_loader["b" /* TranslateLoader */], translate_loader["a" /* TranslateFakeLoader */], []), core["_41" /* ɵmpd */](4608, translate_compiler["a" /* TranslateCompiler */], translate_compiler["b" /* TranslateFakeCompiler */], []), core["_41" /* ɵmpd */](4608, translate_parser["b" /* TranslateParser */], translate_parser["a" /* TranslateDefaultParser */], []), core["_41" /* ɵmpd */](4608, missing_translation_handler["b" /* MissingTranslationHandler */], missing_translation_handler["a" /* FakeMissingTranslationHandler */], []), core["_41" /* ɵmpd */](4608, translate_service["a" /* TranslateService */], translate_service["a" /* TranslateService */], [translate_store["a" /* TranslateStore */], translate_loader["b" /* TranslateLoader */], translate_compiler["a" /* TranslateCompiler */], translate_parser["b" /* TranslateParser */], missing_translation_handler["b" /* MissingTranslationHandler */], translate_service["b" /* USE_DEFAULT_LANG */], translate_service["c" /* USE_STORE */]]), core["_41" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_41" /* ɵmpd */](512, esm5_forms["v" /* ɵba */], esm5_forms["v" /* ɵba */], []), core["_41" /* ɵmpd */](512, esm5_forms["i" /* FormsModule */], esm5_forms["i" /* FormsModule */], []), core["_41" /* ɵmpd */](512, esm5_forms["s" /* ReactiveFormsModule */], esm5_forms["s" /* ReactiveFormsModule */], []), core["_41" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_41" /* ɵmpd */](512, _ngx_translate_core["b" /* TranslateModule */], _ngx_translate_core["b" /* TranslateModule */], []), core["_41" /* ɵmpd */](512, directives_module["a" /* CoreDirectivesModule */], directives_module["a" /* CoreDirectivesModule */], []), core["_41" /* ɵmpd */](512, pipes_module["a" /* CorePipesModule */], pipes_module["a" /* CorePipesModule */], []), core["_41" /* ɵmpd */](512, components_module["a" /* CoreComponentsModule */], components_module["a" /* CoreComponentsModule */], []), core["_41" /* ɵmpd */](512, ionic_angular_module["b" /* IonicPageModule */], ionic_angular_module["b" /* IonicPageModule */], []), core["_41" /* ɵmpd */](512, submission_list_module_AddonModAssignSubmissionListPageModule, submission_list_module_AddonModAssignSubmissionListPageModule, []), core["_41" /* ɵmpd */](256, translate_service["c" /* USE_STORE */], undefined, []), core["_41" /* ɵmpd */](256, translate_service["b" /* USE_DEFAULT_LANG */], undefined, []), core["_41" /* ɵmpd */](256, module_loader["a" /* LAZY_LOADED_TOKEN */], submission_list_AddonModAssignSubmissionListPage, [])]); });
-
-//# sourceMappingURL=submission-list.module.ngfactory.js.map
+//# sourceMappingURL=discussion.js.map
 
 /***/ })
 

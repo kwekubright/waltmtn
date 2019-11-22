@@ -3,9 +3,9 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.mtnstaff.assessment"
-        versionCode = "37200"
+        versionCode = "37300"
         android-versionCode="37200"
-        version   = "3.7.2">
+        version   = "3.7.3">
     <name>MTN Assess</name>
 
     <description>
