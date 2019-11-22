@@ -4,7 +4,7 @@
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.mtnstaff.assessment"
         versionCode = "37300"
-        android-versionCode="37200"
+        android-versionCode="37300"
         version   = "3.7.3">
     <name>MTN Assess</name>
 
